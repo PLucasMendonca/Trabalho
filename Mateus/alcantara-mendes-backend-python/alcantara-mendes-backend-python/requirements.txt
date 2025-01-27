@@ -1,0 +1,8 @@
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+python_dotenv==1.0.1
+nltk==3.8.1
+PyMySQL==1.1.1
+llama-index==0.10.65
+pymupdf==1.24.9
+# pip install flask-cors

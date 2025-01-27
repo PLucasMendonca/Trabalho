@@ -1,0 +1,18 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2015 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+import{common as e}from"../sw_modules/common.js";import{util as t}from"../sw_modules/util.js";import{dcLocalStorage as n}from"./local-storage.js";import{ADOBE_URL as a}from"./constant.js";export function isNewUser(){if(!n.getItem("extUserState")){const e=n.getItem("viewerStorage");if(e){return+(0===(parseInt(e.usage)||0))}return-1}return 0}export async function updateExtUserState(){if(!n.getItem("extUserState")){n.setItem("extUserState","ru");const e=await chrome.tabs.query({active:!0,lastFocusedWindow:!0});chrome.runtime.sendMessage({main_op:"reRegisterUninstallUrl",tab:e[0]})}}const o={MACHINE:"machine"};export function setCookie(e,t,n={}){const a={name:e,value:t,secure:!0,sameSite:"no_restriction"};n.url&&(a.url=n.url),n.path&&(a.path=n.path),n.expiryDate&&(a.expirationDate=n.expiryDate),n.sameSite&&(a.sameSite=n.sameSite),n.secure&&(a.secure=n.secure),n.domain&&(a.domain=n.domain),chrome.cookies.set(a)}export function isISOString(e){const t=new Date(e);return!Number.isNaN(t.valueOf())&&t.toISOString()===e}async function r(e,t=void 0){const n=new Date,r=n.getMonth(),i=n.getFullYear();let s="mmac";e===o.MACHINE&&(s+="_machine"),t&&(s+=`_${t}`);let c=null;try{c=await chrome.cookies.get({url:a,name:s});const e=!c||function(e,t,n){const a=new Date(e),o=a.getMonth(),r=a.getFullYear();return n>r||n===r&&t>o}(c.value,r,i);return!e}catch(e){return!1}}function i(t){const n=e.getAcroIpmURL(),a=new URL(n);return t.pingType===o.MACHINE&&(a.pathname+="/machine"),t.appPath?a.pathname+=`/${encodeURIComponent(t.appPath)}`:a.pathname+="/overall",Object.keys(t.schema).forEach((e=>{const n=t.schema[e];a.pathname+=n?`/${encodeURIComponent(n)}`:"/unspecified"})),a.pathname+="/mmac.html",a.toString()}async function s(e,t,n=void 0){try{const r=await fetch(e);if(200===r?.status){let e="mmac";t===o.MACHINE&&(e+="_machine"),n&&(e+=`_${n}`);const r=new Date,i=Math.floor(Date.now()/1e3)+2678400;setCookie(e,r.toISOString(),{url:a,expiryDate:i,path:"/",domain:".adobe.com"})}}catch(e){console.error(e)}}async function c(e){if(async function(e){e&&!await r(o.MACHINE)&&s(i({...e,appPath:void 0,pingType:o.MACHINE}),o.MACHINE)}(e),function(e){return!!e&&!(!e.appPath||"string"!=typeof e.appPath||""===e.appPath.trim())}(e)&&!await r(o.MACHINE,e.appPath)){s(i({...e,pingType:o.MACHINE}),o.MACHINE,e.appPath)}}export function sendPingEventHandler(){let e="chrome-extension";t.isEdge()&&(e="edge-extension");const a=n.getItem("appLocale");let o=n.getItem("viewer-locale");o||(o=n.getItem("locale")),c({appPath:e,schema:{appIdentifier:"dc-acrobat-extension",appVersion:chrome.runtime.getManifest().version,appReferrer:n.getItem("installSource"),userType:"unknown",subscriptionType:"unknown",locale:a||o}})}

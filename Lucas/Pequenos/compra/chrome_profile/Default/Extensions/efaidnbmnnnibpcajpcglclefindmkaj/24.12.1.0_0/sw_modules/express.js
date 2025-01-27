@@ -1,0 +1,18 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2015 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+import{analytics as e,events as t}from"../common/analytics.js";import{dcLocalStorage as n}from"../common/local-storage.js";import{loggingApi as o}from"../common/loggingApi.js";import{EXPRESS as s}from"./constant.js";import{floodgate as r}from"./floodgate.js";import{util as c}from"./util.js";let a=!1;const i="expressMenu";async function l(r,c){n.setItem(s.CONTEXT_MENU_INTERACTION_DONE,"true"),n.setItem(s.CONTEXT_MENU_ON_CLICK_INFO_LOCAL_STORAGE_KEY,r);try{await chrome.scripting.executeScript({target:{tabId:c.id},files:["content_scripts/express-content-script.js"]})}catch(n){e.event(t.EXPRESS_CREATE_FRAME_FAILED),o.error({message:"Failed to execute content script for express iframe",error:n})}}function m(e){chrome.scripting.executeScript({target:{tabId:e},func:()=>{!function(e){const t=document.querySelector(`#${e}`);t?.parentElement?.removeChild(t),document.body.style.overflow="auto"}("expressAcrobatExtension")}})}async function p(e){const t=["http://*/*","https://*/*"];if((await u(e)).enableExpressContextMenu){if(!a){a=!0;const e=x(i,c.getTranslation("expressEditImageParentContextMenu"),["image"],t);Object.keys(s.VERBS).forEach((n=>{const o=s.VERBS[n]+"ContextMenu";x(o,c.getTranslation(o),["image"],t,e)}))}}else a&&(a=!1,Object.keys(s.VERBS).forEach((e=>{const t=s.VERBS[e]+"ContextMenu";chrome.contextMenus.remove(t)})),chrome.contextMenus.remove(i))}async function u(o){let a={enableExpressContextMenu:!1,enableExpressOptionsPagePreference:!1,enableExpressTooltip:!1};const i=await r.hasFlag("dc-cv-express-context-menu"),l=await r.hasFlag("dc-cv-express-context-menu-tooltip"),m=await r.hasFlag("dc-cv-express-context-menu-internal"),p=await r.hasFlag("dc-cv-express-context-menu-pref-value"),u=n.getItem("installSource"),x=n.getItem("appLocale")||c.getFrictionlessLocale(chrome.i18n.getMessage("@@ui_locale"));if(null==o&&(null!=(o=n.getItem("express-touch-points"))&&""!==o||(o=p)),i&&("en-US"===x||"en-GB"===x)&&(m||"admin"!==u)&&(""!==n.getItem("express-context-menu-fg-enabled-analytics-logged")&&"false"!==n.getItem("express-context-menu-fg-enabled-analytics-logged")||(n.setItem("express-context-menu-fg-enabled-analytics-logged","true"),e.event(t.EXPRESS_CONTEXT_MENU_FG_ENABLED)),a.enableExpressOptionsPagePreference=!0,o&&"false"!==o)){a.enableExpressContextMenu=!0;const e="true"===n.getItem(s.CONTEXT_MENU_INTERACTION_DONE);a.enableExpressTooltip=!e&&l}return a}function x(e,t,n,o,s){return chrome.contextMenus.create({id:e,parentId:s,title:t,contexts:n,documentUrlPatterns:o})}export{l as executeExpressVerb,m as closeExpress,p as toggleExpressTouchpoints,u as isExpressContextMenuEnabled};

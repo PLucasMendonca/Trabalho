@@ -1,0 +1,143 @@
+import os
+import json
+from pathlib import Path
+from llama_index.core import StorageContext, load_index_from_storage, ServiceContext
+from llama_index.llms.openai import OpenAI
+from llama_index.core.query_engine import RetrieverQueryEngine
+
+# Configuração da chave da API e desativação da paralelização do tokenizador
+os.environ['OPENAI_API_KEY'] = "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"
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+
+# Número de melhores resultados a serem considerados
+k = 3
+
+# Configuração do modelo LLM
+llm = OpenAI(model="gpt-3.5-turbo-0125")
+
+# Configuração do contexto de serviço
+service_context = ServiceContext.from_defaults(chunk_size=512)
+
+# Pasta matriz onde os documentos estão localizados
+pasta_matriz = Path(r'/home/abenathar/Sistemas/python/alcantara-mendes-chat-python/pdf/resumidor')
+
+# Pasta de destino para salvar os arquivos JSON
+pasta_destino = Path(r'/home/abenathar/Sistemas/python/alcantara-mendes-chat-python/pdf/resumidor/respostas')
+
+pergunta_1 = "QUAL A QUALIFICAÇÃO TECNICA COMPLETA EXIGIDA? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_2 = "QUAL O CRITÉRIO DE JULGAMENTO? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_3 = "QUAL O ENDEREÇO SERÁ PRESTADO O SERVIÇO OU ENTREGUE O MATERIAL?RESPONDA EM PORTUGUES"
+pergunta_4 = "QUAL O E-MAIL E TELEFONE DO CONTRATANTE ou o contato para que eu solicite esclarecimentos sobre as minhas dúvidas? RESPONDA EM PORTUGUES"
+pergunta_5 = "É PERMITIDO A  SUBCONTRATAÇÃO? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_6 = "QUAL O PRAZO DE VIGÊNCIA DO CONTRATO?RESPONDA EM PORTUGUES"
+pergunta_7 = "QUAIS AS DECLARAÇÕES EU PRECISO EMITIR? RESPONDA EM PORTUGUES"
+pergunta_8 = "QUAL O INTERVALO DE LANCES?RESPONDA EM PORTUGUES"
+pergunta_9 = "MODO DE DISPUTA? RESPONDA APENAS UMA DAS (ABERTO, ABERTO E FECHADO,FECHADO, ALEATORIO)RESPONDA EM PORTUGUES"
+pergunta_10 = "QUAL O TIPO DE LANCE OFERTADO? RESPONDA APENAS UMA OPÇÃO (UNITARIO OU TOTAL)RESPONDA EM PORTUGUES"
+pergunta_11 = "QUAL A QUALIFICAÇÃO FINANCEIRA NECESSARIA? (BALANÇO, CERTIDÃO DE FALêNCIA, CAPITAL SOCIAL)RESPONDA EM PORTUGUES"
+pergunta_12 = "QUAL O PRAZO DE PAGAMENTO PREVISTO?RESPONDA EM PORTUGUES"
+pergunta_13 = "QUAL TIPO DE CONTRATAÇÃO? RESPONDA APENAS UMA DAS OPÇÕES(AQUISIÇÃO, REGISTRO DE PREÇO OU CONTRATO)RESPONDA EM PORTUGUES"
+pergunta_14 = "QUAIS OS PRINCIPAIS PONTOS PASSIVEIS DE DESCLASSIFICAÇÃO?RESPONDA EM PORTUGUES"
+pergunta_15 = "QUAIS CERTIFICADOS SÃO NECESSARIOS PARA HABILITAÇÃO?RESPONDA EM PORTUGUES"
+pergunta_16 = "QUAL O PRAZO DE VALIDADE MINIMO PARA O CADASTRO DA PROPOSTA? RESPONDA APENAS EM NÚMEROS INTEIROS A QUANTIDADE DE DIAS E RESPONDA EM PORTUGUES"
+pergunta_17 = "A LICITANTE ARREMATANTE, TERÁ QUANTO TEMPO PARA APRESENTAR A PROPOSTA ATUALIZADA OU RESPONDER AS DILIGÊNCIAS?RESPONDA EM PORTUGUES"
+pergunta_18 = "É OBRIGATÓRIO POSSUIR ESCRITÓRIO OU SEDE NO LOCAL QUE SERÁ PRESTADO O SERVIÇO? RESPONDA SIM OU NÃO E  JUSTIFIQUE, RESPONDA EM PORTUGUES"
+pergunta_19 = "SOMENTE MICRO EMPRESAS (ME, EPP)PODEM PARTICIPAR DESSA LICITAÇÃO? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_20 = "EU SOU OBRIGADO A FAZER A VISITA TÉCNICA? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_21 = "QUAIS SÃO AS EXIGÊNCIAS PARA A PROPOSTA? RESPONDA EM PORTUGUES"
+pergunta_22 = "FOI DESTACADO ALGUMA OBSERVAÇÃO SE SIM, CITE QUAL OU NÃO? RESPONDA EM PORTUGUES"
+pergunta_23 = "HÁ ALGUMA EXIGÊNCIA ALÉM DAS OBRIGATÓRIAS NO SICAF? PROCURE ESSA INFORMAÇÃO E EXPLIQUE O CONTEXTO DA RESPOSTA DE FORMA RESUMIDA RESPONDA EM PORTUGUES"
+pergunta_24 = "QUAL FOI O VALOR TOTAL ESTIMADO PARA A CONTRATAÇÃO? CASO NÃO ENCONTRE, PROCURE SE É SIGILOSO, RESPONDA EM VALOR DE MOEDA BRASILEIRA APENAS EM NÚMEROS (RESPONDA EM PORTUGUES"
+pergunta_25 = "O PREGÃO SERÁ REALIZADO EM ALGUM PORTAL OU SERÁ PRESENCIAL? SE FOR PRESENCIAL RESPONDA SIM SE FOR EM ALGUM PORTAL RESPONDA NÃO E EM PORTUGUES"
+pergunta_26 = "QUAL O PRAZO PARA ENTREGA DO OBJETO CONTRATADO? RESPONDA EM PORTUGUES"
+pergunta_27 = "QUAIS AS QUANTIDADES TOTAL DE TRABALHADORES ESTÃO SENDO CONTRATADAS?"
+pergunta_28 = "HÁ PREVISÃO DE SERVIÇOS ADICIONAIS?QUAIS? RESPONDA EM PORTUGUES"
+pergunta_29 = "QUAL O VALOR TOTAL MENSAL DO VALE ALIMENTAÇÃO PREVISTO? RESPONDA EM PORTUGUES"
+pergunta_30 = "HÁ PREVISÃO DE PAGAMENTO DE SEGURO DE VIDA? RESPONDA EM PORTUGUES"
+pergunta_31 = "HÁ PREVISÃO DE PAGAMENTO DE ALGUM AUXILO? RESPONDA EM PORTUGUES"
+pergunta_32 = "QUAL O VALOR TOTAL MENSAL PREVISTO PARA PAGAMENTO DE UNIFORMES? RESPONDA EM PORTUGUES"
+pergunta_33 = "QUAL O VALOR TOTAL MENSAL PREVISTO PARA PAGAMENTO DE MATERIAL? ESSE VALOR, SERÁ REEMBOLSADO NA NOTA? RESPONDA EM PORTUGUES"
+pergunta_34 = "QUAL O VALOR TOTAL MENSAL PREVISO PARA PAGAMENTO DE EQUIPAMENTOS? RESPONDA EM PORTUGUES"
+pergunta_35 = "HÁ PREVISÃO DE QUE SEJA REALIZADO ALGUMA MANUTENÇÃO, EXEMPLO: LIMPEZA DE FACHADA, JARDIM, ETC ? RESPONDA EM PORTUGUES"
+pergunta_36 = "SERÁ EXIGIDO A APRESENTAÇÃO DE ALGUM LAUDO NA EXECUÇÃO DO CONTRATO? DETALHE A INFORMAÇÃO"
+pergunta_37 = "HAVERÁ REPASSE DE ALGUM REEMBOLSO? RESPONDA EM PORTUGUES"
+pergunta_38 = "EMPRESAS OPTANTES PELO SIMPLES, QUAL A ORIENTAÇÃO? RESPONDA EM PORTUGUES"
+pergunta_39 = "QUAL O SINDICATO OU CONVENSÃO COLETIVA INDICADO? RESPONDA EM PORTUGUES"
+pergunta_40 = "HÁ PREVISÃO DE CONTA VINCULADA OU SEGURO GARANTIA? RESPONDA EM PORTUGUES"
+
+perguntas = [
+
+    pergunta_1,
+    pergunta_2,
+    pergunta_3,
+    pergunta_4,
+    pergunta_5,
+    pergunta_6,
+    pergunta_7,
+    pergunta_8,
+    pergunta_9,
+    pergunta_10,
+    pergunta_11,
+    pergunta_12,
+    pergunta_13,
+    pergunta_14,
+    pergunta_15,
+    pergunta_16,
+    pergunta_17,
+    pergunta_18,
+    pergunta_19,
+    pergunta_20,
+    pergunta_21,
+    pergunta_22,
+    pergunta_23,
+    pergunta_24,
+    pergunta_25,
+    pergunta_26,
+    pergunta_27,
+    pergunta_28,
+    pergunta_29,
+    pergunta_30,
+    pergunta_31,
+    pergunta_32,
+    pergunta_33,
+    pergunta_34,
+    pergunta_35,
+    pergunta_36,
+    pergunta_37,
+    pergunta_38,
+    pergunta_39,
+    pergunta_40
+]
+
+
+# Função para processar os índices
+def processar_indices(pasta_indices, perguntas, service_context, pasta_destino):
+    if pasta_indices.exists():
+        storage_context = StorageContext.from_defaults(persist_dir=str(pasta_indices))
+        loaded_index = load_index_from_storage(storage_context)
+        loaded_index._service_context = service_context
+        retriever = loaded_index.as_retriever()
+        retriever.similarity_top_k = k
+        query_engine = RetrieverQueryEngine.from_args(retriever=retriever, response_mode='compact')
+        respostas = {}
+
+        for pergunta in perguntas:
+            try:
+                response = query_engine.query(pergunta)
+                respostas[pergunta] = str(response).strip() if response else "Nenhuma resposta clara fornecida."
+            except Exception as e:
+                print(f"Um erro ocorreu ao processar a pergunta '{pergunta}': {str(e)}")
+                respostas[pergunta] = f"Erro: {str(e)}"
+
+        filename_json = pasta_destino / f"{pasta_indices.parent.name}.json"
+        with open(filename_json, 'w', encoding='utf-8') as f:
+            json.dump(respostas, f, ensure_ascii=False, indent=4)
+
+        print(f"Respostas foram salvas no arquivo: {filename_json}")
+
+
+# Iteração sobre todas as pastas diretamente sob 'feitos' para encontrar a pasta 'indices'
+for pasta in pasta_matriz.iterdir():
+    if pasta.is_dir():
+        pasta_indices = pasta / "indices"
+        processar_indices(pasta_indices, perguntas, service_context, pasta_destino)
