@@ -1,84 +1,83 @@
 import os
 import time
 import glob
-import json
 import datetime
 import tkinter as tk
 from tkinter import messagebox
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
-# Diretório de download
 DOWNLOAD_DIR = 'C:/Users/Windows 11/Downloads'
-captcha_root = None
-wait = None
-driver = None
+service = Service('C:/Users/Windows 11/Documents/chromedriver-win64/chromedriver-win64/chromedriver.exe')
+driver = webdriver.Chrome(service=service)
+driver.maximize_window()
+wait = WebDriverWait(driver, 10)
+root = None
 
-def configurar_chrome():
-    global driver, wait
-    options = Options()
-    options.add_experimental_option("prefs", {
-        "printing.print_preview_sticky_settings.appState": json.dumps({
-            "recentDestinations": [{"id": "Save as PDF", "origin": "local", "account": ""}],
-            "selectedDestinationId": "Save as PDF",
-            "version": 2
-        }),
-        "savefile.default_directory": DOWNLOAD_DIR,
-        "savefile.overwrite_existing_files": True
-    })
-    options.add_argument('--kiosk-printing')
+def criar_interface_inicial():
+    """Cria a interface inicial da aplicação."""
+    global root
+    root = tk.Tk()
+    root.title("Iniciar Automação")
 
-    service = Service('C:/Users/Windows 11/Documents/chromedriver-win64/chromedriver-win64/chromedriver.exe')
-    driver = webdriver.Chrome(service=service, options=options)
-    driver.maximize_window()
-    wait = WebDriverWait(driver, 10)
+    tk.Label(root, text="Clique abaixo para iniciar a automação.").pack(pady=10)
+    iniciar_button = tk.Button(root, text="Iniciar Automação", command=iniciar_automacao)
+    iniciar_button.pack(pady=20)
+    root.mainloop()
 
-def iniciar_tcu(cnpj):
+def iniciar_automacao():
     """Inicia a automação ao clicar no botão."""
-    configurar_chrome()
+    global root
+    root.destroy()
     url = 'https://contasirregulares.tcu.gov.br/ordsext/f?p=105:21:10861552622151::::P21_TIPO:CNPJ'
     driver.get(url)
 
     try:
         entrar_site_emissao = wait.until(EC.element_to_be_clickable((By.ID, 'P21_FINS_ELEITORAIS_0')))
         driver.execute_script("arguments[0].click();", entrar_site_emissao)
-        criar_janela_captcha(cnpj)  # Passa o CNPJ
+        criar_janela_cnpj()
     except NoSuchElementException:
-        messagebox.showerror("Erro", "Erro ao iniciar a automação. Verifique o site.")
+        mostrar_erro("Erro ao iniciar a automação. Verifique o site.")
     except Exception as e:
-        messagebox.showerror("Erro", f"Ocorreu um erro: {e}")
+        mostrar_erro(f"Ocorreu um erro: {e}")
 
-def criar_janela_captcha(cnpj):
-    global captcha_root
-    """Cria a janela para inserção do CAPTCHA e continua a automação."""
-    captcha_root = tk.Tk()
-    captcha_root.title("Insira CNPJ")
+def criar_janela_cnpj():
+    """Cria a janela para inserção do CNPJ."""
+    cnpj_root = tk.Tk()
+    cnpj_root.title("Insira CNPJ")
 
-    mensagem = tk.Label(captcha_root, text="Por favor, faça o CAPTCHA abaixo e volte nesta tela\nClique no botão abaixo", font=("Arial", 14))
+    tk.Label(cnpj_root, text="Insira o CNPJ (apenas números):").pack(pady=10)
+    cnpj_entry = tk.Entry(cnpj_root)
+    cnpj_entry.pack(pady=10)
+
+    mensagem = tk.Label(cnpj_root, text="Após confirmação do captcha clique no botão abaixo", font=("Arial", 14))
     mensagem.pack(pady=20)
 
-    continuar_button = tk.Button(captcha_root, text="Continuar Automação", command=lambda: continuar_automacao(cnpj))
+    continuar_button = tk.Button(cnpj_root, text="Continuar Automação", command=lambda: continuar_automacao(cnpj_entry, cnpj_root))
     continuar_button.pack(pady=20)
 
-    captcha_root.mainloop()
+    cnpj_root.mainloop()
 
-def continuar_automacao(cnpj):
-    global captcha_root
+def continuar_automacao(cnpj_entry, cnpj_root):
     """Continua a automação após a inserção do CNPJ."""
+    cnpj = cnpj_entry.get().replace('.', '').replace('/', '').replace('-', '')
+
+    if not cnpj or len(cnpj) != 14:
+        mostrar_erro("Por favor, insira o CNPJ correto.")
+        return
+
     try:
         preencher_cnpj(cnpj)
         emitir_certidao()
-        baixar_certidao(cnpj)
+        baixar_certidao()
+        # Passa a referência da janela CNPJ para a função verificar_download
+        root.after(5000, verificar_download, cnpj, cnpj_root)
     except NoSuchElementException:
-        messagebox.showerror("Erro", "Erro ao emitir certidão. Verifique os dados.")
-    finally:
-        driver.quit()
-        captcha_root.destroy()
+        mostrar_erro("Erro ao emitir certidão. Verifique os dados.")
 
 def preencher_cnpj(cnpj):
     """Preenche o campo do CNPJ na página."""
@@ -90,53 +89,58 @@ def emitir_certidao():
     """Emite a certidão clicando no botão correspondente."""
     emitir_certificado = wait.until(EC.element_to_be_clickable((By.ID, 'B55138095812122870')))
     emitir_certificado.click()
-    time.sleep(3.5)
+    time.sleep(4)  # Aguardar a página carregar
 
-def baixar_certidao(cnpj):
+def baixar_certidao():
     """Clica no link para baixar a certidão."""
     try:
         baixar_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(@href, 'f?p=105:29:::NO::P29_COD_CONTROLE,P29_TIPO_CERTIDAO')]")))
+
         driver.execute_script("arguments[0].click();", baixar_link)
-        time.sleep(5)  # Aumentar o tempo de espera para garantir que o download comece
-
-        verificar_download(cnpj)
+        time.sleep(2)  # Espera o download começar
     except (NoSuchElementException, TimeoutException):
-        messagebox.showerror("Erro", "Erro ao tentar baixar a certidão. O link pode não estar disponível.")
-        driver.quit()
+        mostrar_erro("Erro ao tentar baixar a certidão. O link pode não estar disponível.")
 
-def verificar_download(cnpj):
-    """Verifica se o download da certidão foi concluído, renomeia o arquivo e move para uma nova pasta."""
-    pasta_download = DOWNLOAD_DIR
-    padrao_arquivo = os.path.join(pasta_download, "Certidao *.pdf")
-    nova_data = datetime.datetime.now() + datetime.timedelta(days=180)
+def verificar_download(cnpj, cnpj_root):
+    """Verifica se o download da certidão foi concluído e renomeia o arquivo."""
+    data_atual = datetime.datetime.now().strftime("%d%m%y")
+    padrao_arquivo = os.path.join(DOWNLOAD_DIR, f"Certidao *{data_atual}*.pdf")
+    nova_data = datetime.datetime.now() + datetime.timedelta(days=30)
     data_formatada = nova_data.strftime("%d.%m.%Y")
     novo_nome = f"TCU {data_formatada}.pdf"
-    nova_pasta = os.path.join(pasta_download, cnpj)  # Nova pasta para o CNPJ
+    nova_pasta = os.path.join(DOWNLOAD_DIR, cnpj)
     novo_caminho = os.path.join(nova_pasta, novo_nome)
 
-    checar_arquivo(padrao_arquivo, novo_caminho, nova_pasta)
+    def checar_arquivo():
+        arquivo_encontrado = glob.glob(padrao_arquivo)
+        if arquivo_encontrado:
+            arquivo_download = arquivo_encontrado[0]    
+            if not os.path.exists(arquivo_download + '.crdownload'):
+                if not os.path.exists(nova_pasta):
+                    os.makedirs(nova_pasta)
 
-def checar_arquivo(padrao_arquivo, novo_caminho, nova_pasta):
-    arquivo_encontrado = glob.glob(padrao_arquivo)
-    if arquivo_encontrado:
-        arquivo_download = arquivo_encontrado[0]  # Primeiro arquivo correspondente
-        if not os.path.exists(arquivo_download + '.crdownload'):
-            movendo_arquivo(arquivo_download, novo_caminho, nova_pasta)
+                if os.path.exists(novo_caminho):
+                    os.remove(novo_caminho)
+                time.sleep(2)
+
+                try:
+                    os.rename(arquivo_download, novo_caminho)
+                    messagebox.showinfo("Arquivo Renomeado", f"Arquivo renomeado e movido para: {novo_caminho}")
+                except Exception as e:
+                    mostrar_erro(f"Erro ao mover o arquivo: {e}")
+
+                # Fecha a janela do Tkinter e o driver do navegador aqui, após o download
+                cnpj_root.destroy()  # Fecha a janela CNPJ
+                driver.quit()
+            else:
+                # Se o download não estiver completo, chama a função novamente após 2 segundos
+                root.after(2000, checar_arquivo)
         else:
-            captcha_root.after(2000, checar_arquivo, padrao_arquivo, novo_caminho, nova_pasta)
+            # Se nenhum arquivo foi encontrado, verifica novamente após 2 segundos
+            root.after(2000, checar_arquivo)
+    checar_arquivo()
 
-def movendo_arquivo(arquivo_download, novo_caminho, nova_pasta):
-    if not os.path.exists(nova_pasta):
-        os.makedirs(nova_pasta)
+def mostrar_erro(mensagem):
+    messagebox.showerror("Erro", mensagem)
 
-    if os.path.exists(novo_caminho):
-        os.remove(novo_caminho)
-
-    time.sleep(2)  # Pode ser retirado ou reduzido com uma verificação mais robusta
-    try:
-        print(f"Tentando mover {arquivo_download} para {novo_caminho}")
-        os.rename(arquivo_download, novo_caminho)
-        messagebox.showinfo("Arquivo Renomeado", f"Arquivo renomeado e movido para: {novo_caminho}")
-    except Exception as e:
-        messagebox.showerror("Erro ao Mover Arquivo", f"Ocorreu um erro: {e}")
-        print(f"Erro ao mover o arquivo: {e}")
+criar_interface_inicial()

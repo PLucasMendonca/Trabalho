@@ -35,11 +35,12 @@ def configurar_chrome():
 
     return opcao_chrome
 
-def continuar_automacao_df(url_uf, cnpj):
-    global root, captcha_entry
+def continuar_automacao_df(url_uf):
+    global root, cnpj_entry, captcha_entry
     root = tk.Tk()
-    root.title("Insirao CAPTCHA")
+    root.title("Insira CNPJ e CAPTCHA")
 
+    # Inicia o driver aqui
     service = Service(
         'C:/Users/Windows 11/Documents/chromedriver-win64/chromedriver-win64/chromedriver.exe')
     opcao_chrome = configurar_chrome()
@@ -50,6 +51,10 @@ def continuar_automacao_df(url_uf, cnpj):
     
     wait = WebDriverWait(driver, 10)
 
+    tk.Label(root, text="Insira o CNPJ (apenas números):").pack(pady=10)
+    cnpj_entry = tk.Entry(root)
+    cnpj_entry.pack(pady=10)
+
     # Label e entrada para o CAPTCHA
     tk.Label(root, text="Insira o CAPTCHA:").pack(pady=10)
     captcha_entry = tk.Entry(root)
@@ -57,14 +62,22 @@ def continuar_automacao_df(url_uf, cnpj):
 
     # Botão para continuar a automação
     continuar_button = tk.Button(
-        root, text="Continuar Automação", command=lambda: iniciar_automacao(driver, wait, cnpj))
+        root, text="Continuar Automação", command=lambda: iniciar_automacao(driver, wait))
     continuar_button.pack(pady=20)
 
     root.mainloop()
 
-def iniciar_automacao(driver, wait, cnpj):
-    global captcha_entry
+def iniciar_automacao(driver, wait):
+    global cnpj_entry, captcha_entry
+
+    # Pega os valores inseridos pelo usuário
+    cnpj = cnpj_entry.get().replace('.', '').replace('/', '').replace('-', '')
     captcha = captcha_entry.get()
+
+    # Verifica se o CNPJ está correto
+    if not cnpj or len(cnpj) != 14:
+        messagebox.showerror("Erro", "Por favor, insira o CNPJ correto.")
+        return
 
     try:
         # Seleciona CNPJ no dropdown
@@ -117,6 +130,8 @@ def verificar_download(cnpj, driver):
         if arquivo_encontrado:
             arquivo_download = arquivo_encontrado[0]
             if not os.path.exists(arquivo_download + '.crdownload'):
+                messagebox.showinfo("Download Completo", "O download foi concluído com sucesso!")
+
                 if not os.path.exists(nova_pasta):
                     os.makedirs(nova_pasta)
 

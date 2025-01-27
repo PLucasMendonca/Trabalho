@@ -35,10 +35,10 @@ def configurar_chrome():
 
     return opcao_chrome
 
-def continuar_automacao_sp(url_uf, cnpj):
+def continuar_automacao_sp(url_uf):
     global root, cnpj_entry, captcha_entry
     root = tk.Tk()
-    root.title("Insira o CAPTCHA")
+    root.title("Insira CNPJ e CAPTCHA")
 
      # Inicia o driver aqui
     service = Service(
@@ -55,6 +55,10 @@ def continuar_automacao_sp(url_uf, cnpj):
         (By.ID, "ctl00_conteudoPaginaPlaceHolder_filtroTabContainer_filtroEmitirCertidaoTabPanel_tipoFiltroDropDownList")))
     selecionar = Select(selecionar_cnpj)
     selecionar.select_by_visible_text("CNPJ")
+    
+    tk.Label(root, text="Insira o CNPJ (apenas números):").pack(pady=10)
+    cnpj_entry = tk.Entry(root)
+    cnpj_entry.pack(pady=10)
 
     # Label e entrada para o CAPTCHA
     tk.Label(root, text="Insira o CAPTCHA:").pack(pady=10)
@@ -63,15 +67,22 @@ def continuar_automacao_sp(url_uf, cnpj):
 
     # Botão para continuar a automação
     continuar_button = tk.Button(
-    root, text="Continuar Automação", command=lambda: iniciar_automacao(driver, wait, cnpj))
+    root, text="Continuar Automação", command=lambda: iniciar_automacao(driver, wait))
     continuar_button.pack(pady=20)
 
     root.mainloop()
 
-def iniciar_automacao(driver, wait, cnpj):
+def iniciar_automacao(driver, wait):
     global cnpj_entry, captcha_entry
 
+    # Pega os valores inseridos pelo usuário
+    cnpj = cnpj_entry.get().replace('.', '').replace('/', '').replace('-', '')
     captcha = captcha_entry.get()
+
+    # Verifica se o CNPJ está correto
+    if not cnpj or len(cnpj) != 14:
+        messagebox.showerror("Erro", "Por favor, insira o CNPJ correto.")
+        return
 
     try:       
         # Insere o CNPJ no campo correspondente
@@ -114,6 +125,8 @@ def verificar_download(cnpj, driver):
         if arquivo_encontrado:
             arquivo_download = arquivo_encontrado[0]
             if not os.path.exists(arquivo_download + '.crdownload'):
+                messagebox.showinfo("Download Completo", "O download foi concluído com sucesso!")
+
                 if not os.path.exists(nova_pasta):
                     os.makedirs(nova_pasta)
 

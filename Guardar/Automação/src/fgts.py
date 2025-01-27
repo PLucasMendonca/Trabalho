@@ -126,6 +126,7 @@ def checar_arquivo(padrao_arquivo, novo_caminho, nova_pasta):
     if arquivo_encontrado:
         arquivo_download = arquivo_encontrado[0]
         if not os.path.exists(arquivo_download + '.crdownload'):
+            messagebox.showinfo("Download Completo", "O download foi concluído com sucesso!")
             movendo_arquivo(arquivo_download, novo_caminho, nova_pasta)
         else:
             root.after(2000, checar_arquivo, padrao_arquivo, novo_caminho, nova_pasta)
@@ -145,3 +146,7 @@ def movendo_arquivo(arquivo_download, novo_caminho, nova_pasta):
     except Exception as e:
         messagebox.showerror("Erro ao Mover Arquivo", f"Ocorreu um erro: {e}")
         print(f"Erro ao mover o arquivo: {e}")
+
+if __name__ == "__main__":
+    cnpj = "1"
+    iniciar_fgts(cnpj)
