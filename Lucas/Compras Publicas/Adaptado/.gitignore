@@ -1,0 +1,13 @@
+venv/
+# Arquivos temporários do Excel
+~$*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Downloads e arquivos temporários
+downloads/

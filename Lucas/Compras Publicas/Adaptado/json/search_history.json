@@ -1,0 +1,74 @@
+{
+    "a": [
+        {
+            "numero_pregao": "122024",
+            "data_pregao": "12/12/2003",
+            "orgao": "aa",
+            "uf": "DF",
+            "timestamp": "2024-12-30T14:55:04.016201"
+        },
+        {
+            "numero_pregao": "122024",
+            "data_pregao": "12/12/2003",
+            "orgao": "aa",
+            "uf": "df",
+            "timestamp": "2024-12-30T14:57:44.996479"
+        },
+        {
+            "numero_pregao": "122003",
+            "data_pregao": "12/12/2003",
+            "orgao": "aa",
+            "uf": "DF",
+            "timestamp": "2024-12-30T15:00:28.589935"
+        },
+        {
+            "numero_pregao": "14/2004",
+            "data_pregao": "12/12/2003",
+            "orgao": "aa",
+            "uf": "df",
+            "timestamp": "2024-12-30T15:05:28.967095"
+        },
+        {
+            "numero_pregao": "14/2004",
+            "data_pregao": "12/12/2003",
+            "orgao": "aa",
+            "uf": "DF",
+            "timestamp": "2024-12-30T15:06:16.267187"
+        },
+        {
+            "numero_pregao": "14/2024",
+            "data_pregao": "14/04/2025",
+            "orgao": "",
+            "uf": "DF",
+            "timestamp": "2024-12-30T15:07:32.260414"
+        },
+        {
+            "numero_pregao": "14/2024",
+            "data_pregao": "14/04/2025",
+            "orgao": "",
+            "uf": "",
+            "timestamp": "2024-12-30T15:08:12.030991"
+        },
+        {
+            "numero_pregao": "142024",
+            "data_pregao": "14/04/2025",
+            "orgao": "",
+            "uf": "",
+            "timestamp": "2024-12-30T15:11:40.041951"
+        },
+        {
+            "numero_pregao": "142024",
+            "data_pregao": "14/04/2024",
+            "orgao": "aqrwerwqerqw",
+            "uf": "DF",
+            "timestamp": "2024-12-30T15:15:30.475398"
+        },
+        {
+            "numero_pregao": "312024",
+            "data_pregao": "12/12/2013",
+            "orgao": "aaa",
+            "uf": "DF",
+            "timestamp": "2024-12-31T23:45:31.071711"
+        }
+    ]
+}

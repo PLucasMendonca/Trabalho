@@ -1,0 +1,1348 @@
+{
+    "980": {
+        "nome_empresa": "JC SOLUCOES EM ENGENHARIA LTDA",
+        "razao_social": "JC SOLUCOES EM ENGENHARIA LTDA",
+        "cnpj": "37.646.562/0001-17",
+        "endereco": "QUADRAH10 LOTE 24 431 R 22 SET OESTE GOIANIA|;|674",
+        "dados_bancarios": "BANCO: ITAU  AGÊNCIA: 4439 CONTA: 99237-3",
+        "nome": "Jean Carlos Borges Batista",
+        "cpf": "02519300175 ",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 4,
+                "cards": [
+                    {
+                        "ID": "445374",
+                        "Número do pregão": " 06/2024",
+                        "Cidade": null,
+                        "Estado": "RS",
+                        "Objeto": "O presente credenciamento tem por objeto o CREDENCIAMENTO de Pessoas Jurídicas prestadores de serviços nas ÁREAS DE ENGENHARIA AMBIENTAL, ENGENHARIA CIVIL, ENGENHARIA ELÉTRICA, ENGENHARIA DE SEGURANÇA DO TRABALHO E ARQUITETURA para prestação de serviços técnico-profissionais em caráter temporário e de abrangência pertinentes à classe.",
+                        "Portal": "PNCP",
+                        "ID Licitação": "*",
+                        "Data": "2025-07-15T08:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "CONSORCIO INTERMUNICIPAL - CI - CENTRO SUL - RS",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "458856",
+                        "Número do pregão": "90535/2025 ",
+                        "Cidade": null,
+                        "Estado": "RJ",
+                        "Objeto": "Serviços de elaboração de maquete eletrônica para a proposta arquitetônica o Prédio Anexo da FBN",
+                        "Portal": "COMPRAS GOV",
+                        "ID Licitação": "*",
+                        "Data": "2025-02-06T09:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "UASG 344042 - FUNDACAO BIBLIOTECA NACIONAL",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "461916",
+                        "Número do pregão": "900012025",
+                        "Cidade": null,
+                        "Estado": "GO",
+                        "Objeto": "Concorrência para Contratação de Empresa Especializada em Obra Civil no regime de Empreitada Global para a Execução de Troca de Telhado e Forro da EMEF Professor Joaquim de Paiva, localizada na Rua do Cedro esquina com a Rua da Esperança, Vila SERPRO - Rio Verde  GO, conforme especificações dos projetos, memorial descritivo, cronograma físico-financeiro, termo de referência e demais anexos ao processo.",
+                        "Portal": "ComprasNet",
+                        "ID Licitação": "5900828",
+                        "Data": "2025-02-05T09:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "PREFEITURA MUNICIPAL DE RIO VERDE - GO",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "462280",
+                        "Número do pregão": "90000/2025 ",
+                        "Cidade": null,
+                        "Estado": "RJ",
+                        "Objeto": "Contratação de empresa especializada para elaboração de projetos de prevenção e combate a incêndio e pânico, e sistema de proteção contra descarga atmosférica – SPDA para as edificações e instalações do campus do Instituto Nacional de Educação de Surdos (INES).",
+                        "Portal": "COMPRAS GOV",
+                        "ID Licitação": "*",
+                        "Data": "2025-02-06T10:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "UASG 152005 - MEC-INES-INST.NAC.DE EDUCACAO DE SURDOS/RJ",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "420192",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "jcsolucoesemengenharia@gmail.com",
+                                "senha": "989448"
+                            },
+                            "bll": {
+                                "login": "jcsolucoesemengenharia@gmail.com",
+                                "senha": "499388"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "jcsolucoesemengenharia@gmail.com",
+                                "senha": "y3mhbl"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "996": {
+        "nome_empresa": "NOROESTE FERRAGENS LTDA",
+        "razao_social": "NOROESTE FERRAGENS LTDA",
+        "cnpj": "51.229.506/0001-08",
+        "endereco": "Q SHCNW CRNW QD 510 BLOCO A LOJA 01 SETOR NOROESTE BRASILIA|;|670",
+        "dados_bancarios": "PREENCHER",
+        "nome": "Leonardo Oliveira dos Santos",
+        "cpf": "836.112.825-53",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "451564",
+                        "Número do pregão": "013/2024",
+                        "Cidade": null,
+                        "Estado": "GO",
+                        "Objeto": "REGISTRO DE PREÇOS para aquisição de ferramentas para manutenção dos empreendimentos geridos pela Celgpar, conforme especificações contidas no Edital, no Termo de Referência e demais anexos.",
+                        "Portal": "Licitações-e",
+                        "ID Licitação": "5908799",
+                        "Data": "2025-02-11T09:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "COMPANHIA CELG DE PARTICIPACOES - CELGPAR /(1) CELGPAR",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "436080",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "noroesteferragens3@gmail.com",
+                                "senha": "366229"
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "954": {
+        "nome_empresa": "AREA 4 EVENTOS LTDA",
+        "razao_social": "AREA 4 EVENTOS LTDA",
+        "cnpj": "44.094.732/0001-63",
+        "endereco": "",
+        "dados_bancarios": "CORA SCD - 403 AGENCIA: 0001 CONTA: 2644687-4",
+        "nome": "Cláudia Lima Alves ",
+        "cpf": " 614.640.745-34",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "451840",
+                        "Número do pregão": "01/2025",
+                        "Cidade": null,
+                        "Estado": "DF",
+                        "Objeto": "psicólogo (capacitação) psicólogo (atendimento e acompanhamento) <em>palestrante</em> / mediador assistente social (atendimento e acompanhamento) coordenação executiva de projeto coordenação de equipe psicossocial",
+                        "Portal": "SICONV",
+                        "ID Licitação": "5912618",
+                        "Data": "2025-02-02T00:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "BRASILIA - DF",
+                        "Validade da proposta": null
+                    }
+                ]
+            }
+        }
+    },
+    "632": {
+        "nome_empresa": "HILAN",
+        "razao_social": "HILAN TELECOM LTDA",
+        "cnpj": "31.390.568/0001-90",
+        "endereco": "Quadra 40 Lote 24 salas 101/102 Ed. Jr Center II Etapa B Valparaiso I GO|0;0|254",
+        "dados_bancarios": "Banco SICREDI 748/ AG. 3953, C/C : 30.189-2",
+        "nome": "Esmael Leão da Rocha Neto",
+        "cpf": "009.840.111-45",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "453698",
+                        "Número do pregão": "007/2025",
+                        "Cidade": null,
+                        "Estado": "DF",
+                        "Objeto": "Contratação de serviços de link de <em>Internet</em> Dedicado com IP fixo de no mínimo 10 Mbps (não compartilhada), ou outra tecnologia similar ou superior, para permitir acesso das Conveniências do BRB instaladas em todo território nacional, à infraestrutura do BRB em Data Center, incluindo fornecimento de equipamentos em comodato, instalação, configuração e manutenção do serviço instalado, conforme condições e especificações constantes deste edital e seus anexos.",
+                        "Portal": "Compras Públicas",
+                        "ID Licitação": "5912639",
+                        "Data": "2025-02-07T10:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "BRB - BANCO DE BRASÍLIA S.A",
+                        "Validade da proposta": null
+                    }
+                ]
+            }
+        }
+    },
+    "992": {
+        "nome_empresa": "WIND",
+        "razao_social": "W DOS S GOUVEIA LTDA",
+        "cnpj": "47.025.733.0001-44",
+        "endereco": "R SANTA LUZIA 449 LOJA 1 TABULEIRO DO MARTINS MACEIO|;|662",
+        "dados_bancarios": "PREENCHER",
+        "nome": "WINDSON DOS SANTOS GOUVEIA",
+        "cpf": "157.121.784.35",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 2,
+                "cards": [
+                    {
+                        "ID": "456558",
+                        "Número do pregão": "00001/2025/2025",
+                        "Cidade": null,
+                        "Estado": "RN",
+                        "Objeto": "Registro de Preços para futuro e eventual fornecimento de materiais gráficos destinados as Secretarias Municipais deste Município de Paraná-RN",
+                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
+                        "ID Licitação": "5922379",
+                        "Data": "2025-02-07T08:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE PARANA",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "458788",
+                        "Número do pregão": "007-2025PE",
+                        "Cidade": null,
+                        "Estado": "BA",
+                        "Objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA PRESTAÇÃO DE SERVIÇOS GRÁFICOS COM FORNECIMENTO DE MATERIAL, A FIM DE ATENDER AS NECESSIDADES DAS SECRETARIAS E REPARTIÇÕES PÚBLICAS PERTENCENTES AO MUNICÍPIO DE ITATIM-BA, CONFORME CONDIÇÕES, QUANTIDADES E EXIGÊNCIAS ESTABELECIDAS NESTE EDITAL E SEUS ANEXOS.",
+                        "Portal": "BLL - Bolsa de Licitações e Leilões",
+                        "ID Licitação": "5927642",
+                        "Data": "2025-02-05T08:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE ITATIM [ITATIM-BA]",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "ACEITAS": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "463386",
+                        "Número do pregão": "02/2025",
+                        "Cidade": null,
+                        "Estado": "AL",
+                        "Objeto": "Registro de Preço para Futura e Eventual Contratação de Serviços Gráficos, com fornecimento de Material de Impressão e Confecção, para atender às necessidades das Secretarias Municipais do Poder Executivo do Município de Satuba/AL.",
+                        "Portal": "BNC - Bolsa Nacional de Compras",
+                        "ID Licitação": "5937646",
+                        "Data": "2025-02-04T08:30:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE SATUBA [SATUBA-AL]",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "429086",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "wind.alcantaramendes@gmail.com",
+                                "senha": "710615"
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1026": {
+        "nome_empresa": "FIELTUR AGENCIA DE VIAGEM LTDA",
+        "razao_social": "FIELTUR AGENCIA DE VIAGEM LTDA",
+        "cnpj": "15205738000162",
+        "endereco": "AV FERNANDO SIMOES BARBOSA 266 SALA 1004 EDF WECON CENTER VI RECIFE|;|664",
+        "dados_bancarios": "CAIXA FEDERAL 3515 1292 000577966684-5",
+        "nome": "Severino Francisco dos Santos",
+        "cpf": "649.935.234-91",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "458388",
+                        "Número do pregão": "2/2025",
+                        "Cidade": null,
+                        "Estado": "MG",
+                        "Objeto": "<em>HOSPEDAGEM</em>",
+                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
+                        "ID Licitação": "5929370",
+                        "Data": "2025-02-07T08:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE JACUTINGA",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "453094",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "902": {
+        "nome_empresa": "VERUM VIRIDI BRASIL COMERCIO E SERVICO LTDA",
+        "razao_social": "VERUM VIRIDI BRASIL COMERCIO E SERVICO LTDA",
+        "cnpj": "43.695.130/0001-07",
+        "endereco": "R CORONEL ZAMITH 380|;|678",
+        "dados_bancarios": "bradesco ag 540 cc 335666",
+        "nome": "Frans Pagnier",
+        "cpf": "733.360.171-49",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "461152",
+                        "Número do pregão": "6/2025",
+                        "Cidade": null,
+                        "Estado": "MG",
+                        "Objeto": "AQUISIÇÃO DE <em>CANABIDIOL</em> PARA ATENDIMENTO DA ÁREA DA SAÚDE PERTENCENTE A PREFEITURA MUNICIPAL DE QUARTEL GERAL/MG.",
+                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
+                        "ID Licitação": "5936157",
+                        "Data": "2025-02-12T08:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE QUARTEL GERAL",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "349684",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "viridiverum@gmail.com",
+                                "senha": "175569"
+                            },
+                            "bll": {
+                                "login": "viridiverum@gmail.com",
+                                "senha": "700595"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1022": {
+        "nome_empresa": "LIFE BUSINESS",
+        "razao_social": "MARCIA DIANE DINIZ BARROS LTDA",
+        "cnpj": "33.839.237/0001-10",
+        "endereco": "AV TANCREDO NEVES 001189 EDIF GUIMARAES TRADE SALA 1603 - CAMINHO DAS ARVORES - SALVADOR|;|642",
+        "dados_bancarios": "PREENCHER",
+        "nome": "Marcia Diane Diniz Barros",
+        "cpf": "023.967.373-50",
+        "etapas": {
+            "CADASTRAR NO PORTAL": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "462996",
+                        "Número do pregão": "902692025",
+                        "Cidade": null,
+                        "Estado": "MG",
+                        "Objeto": "Conforme aprovado em acordo coletivo entre os funcionários e a Diretoria do CRBio-04 (CLÁUSULA TERCEIRA), o benefício do <em>plano</em> <em>odontológico</em> para os funcionários tem o objetivo de proporcionar qualidade na saúde dos beneficiados e em consequência melhor qualidade de vida, acarretando maior eficiência nas atividades desenvolvidas rotineiramente no CRBio-04. Devendo possuir as coberturas previstas na legislação e no Rol de Procedimentos da Agência nacional de Saúde Suplemen",
+                        "Portal": "ComprasNet",
+                        "ID Licitação": "5943794",
+                        "Data": "2025-02-03T07:59:59+03:00",
+                        "AO ESTIMADO ÓRGÃO": "CONSELHO REGIONAL DE BIOLOGIA/4A REGIAO",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "449060",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "868": {
+        "nome_empresa": "S2X",
+        "razao_social": "S2X PROMOÇÕES LTDA",
+        "cnpj": "13.483.312/0001-45",
+        "endereco": "R ANTONIO AMBUBA  LOGRADOURO R ANTONIO AMBUBA NÚMERO 712 COMPLEMENTO APT 603 - PARQUE MUNHOZ / SAO PAULO|;|590",
+        "dados_bancarios": "Banco Itaú - Ag. 2978 - C/C 37370-8",
+        "nome": "Alex Guimarães Ribeiro",
+        "cpf": "277.119.098-29",
+        "etapas": {
+            "ACEITAS": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "463312",
+                        "Número do pregão": "0003/2025",
+                        "Cidade": null,
+                        "Estado": "MG",
+                        "Objeto": "Registro de preços para futura e eventual Contratação de Empresa (s) especializada (s) na prestação de serviços de locução de eventos, gravação de propagandas, sonorização de propaganda volante carro e moto, locação e instalação de sonorização e iluminação de pequeno e médio porte. Conforme anexo I.",
+                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
+                        "ID Licitação": "5915043",
+                        "Data": "2025-02-03T08:30:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "352024",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": " sxpromocoes@gmail.com",
+                                "senha": "2tdbps"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "88": {
+        "nome_empresa": "ALCÂNTARA MENDES",
+        "razao_social": "ALCÂNTARA MENDES",
+        "cnpj": "40.151.484/0001-94",
+        "endereco": "SCN 01 BLOCO D, SALA 221 ED. VEGA LUXURY, BRASÍLIA,DF|0;0",
+        "dados_bancarios": "BANCO C6- SA , AG. 0001, CONTA 18394490-9",
+        "nome": "Fernanda Alcântara",
+        "cpf": "012.071.231-88",
+        "etapas": {
+            "ACEITAS": {
+                "total_cards": 4,
+                "cards": [
+                    {
+                        "ID": "463322",
+                        "Número do pregão": "PE/2025",
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": "Prestação dos Serviços de Assessoria e Consultoria em Contabilidade Pública, Setor Pessoal, Licitações e Contratos e Governança Pública para Atender as Necessidades da Câmara Municipal de Catunda-CE",
+                        "Portal": null,
+                        "ID Licitação": "5936649",
+                        "Data": "2025-02-12T08:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE CATUNDA - CAMARA MUNICIPAL",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "463324",
+                        "Número do pregão": "02/2025",
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": "Prestação de Serviços Técnicos Especializados de Consultoria e Assessoria Administrativa em Compras Públicas, Licitações e Contratos, de forma a atender as normas legais na Prefeitura Municipal de Terra Nova e suas secretarias.",
+                        "Portal": null,
+                        "ID Licitação": "5944338",
+                        "Data": "2025-02-11T14:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE TERRA NOVA",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "463326",
+                        "Número do pregão": "001/2025",
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": "CONTRATAÇÃO DE EMPRESA COM CONHECIMENTO TÉCNICO ESPECIALIZADO PARA PRESTAÇÃO DE SERVIÇOS DE ASSESSORIA E CONSULTORIA EM LICITAÇÕES E CONTRATOS COMPREENDENDO ORIENTAÇÕES NAS FASES INTERNAS E EXTERNAS, ELABORAÇÃO DE MINUTAS, EDITAIS, TERMO DE REFERÊNCIA ENTRE OUTROS, ACOMPANHAMENTO AOS PREGÕES, CONCORRÊNCIA, DISPENSAS, INEXIGIBILIDADE REALIZADOS PELA CÂMARA MUNICIPAL DE VEREADORES DE SANTA TEREZINHA/PE, COMO TAMBÉM A INCLUSÃO DAS INFORMAÇÕES JUNTO AO REMESSA-TCEPE.",
+                        "Portal": null,
+                        "ID Licitação": "5945296",
+                        "Data": "2025-02-03T18:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "CÂMARA MUNICIPAL DE SANTA TEREZINHA",
+                        "Validade da proposta": null
+                    },
+                    {
+                        "ID": "463330",
+                        "Número do pregão": "2/2025",
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": "Contratação de empresa para prestação de serviços de consultoria e assessoria, gerenciamento e alimentação dos dados contábeis, licitações e contratos, patrimônios, setor pessoal e obras no Sistema Integrado de Gestão e Auditoria-Siga, bem como a orientação e capacitação dos servidores envolvidos no mesmo da Prefeitura Municipal de Heliópolis (BA), conforme condições, quantidades e exigências estabelecidas neste Edital e no Termo de Referência.",
+                        "Portal": null,
+                        "ID Licitação": "5926405",
+                        "Data": "2025-02-05T12:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICÍPIO DE HELIÓPOLIS/BA",
+                        "Validade da proposta": null
+                    }
+                ]
+            },
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342484",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "cadastrosmartsupply@gmail.com",
+                                "senha": "202307"
+                            },
+                            "bll": {
+                                "login": "daniel@smartsupply.net.br",
+                                "senha": "359753"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "cadastro@alcantaramendes.com.br",
+                                "senha": "pto9oa"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "44": {
+        "nome_empresa": "ALTRI CONSTRUTORA LTDA",
+        "razao_social": "ALTRI CONSTRUTORA LTDA",
+        "cnpj": "34.713.265/0001-59",
+        "endereco": "na Rua Copaiba Lote 01 Bloco B sala 420, Century Plaza, Águas Claras/DF|0;0|152",
+        "dados_bancarios": "BANCO INTER - AGENCIA 0001 - CONTA CORRENTE 4329485-5",
+        "nome": "RODRIGO SILVA SANHUEZA CUEVAS",
+        "cpf": "002.224.741-65",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342490",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": " bmc.licitacoes@gmail.com",
+                                "senha": "250572"
+                            },
+                            "bll": {
+                                "login": " bmc.licitacoes@gmail.com",
+                                "senha": "490975"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "678": {
+        "nome_empresa": "AMELATI",
+        "razao_social": "AMELATI SOLUCOES E INOVACOES LTDA",
+        "cnpj": "50.118.474/0001-00",
+        "endereco": "Q SQSW 300 BLOCO N - BRASILIA DF|0;0|348",
+        "dados_bancarios": "Agência: 0001 Conta: 4384150-2 Instituição: 403 - Cora SCD",
+        "nome": "ANDRESSA DE ALMEIDA CASTRO KAMMOUN",
+        "cpf": "051.811.591-76",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342492",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "licitaameltai@gmail.com",
+                                "senha": "298326"
+                            },
+                            "bll": {
+                                "login": " amelatisolucoes@gmail.com",
+                                "senha": "200778"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "amelatisolucoes@gmail.com",
+                                "senha": "hr6ujo"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "750": {
+        "nome_empresa": "FORTUNE COMERCIO E SERVICOS DE BRINDES LTDA",
+        "razao_social": "FORTUNE COMERCIO E SERVIÇOS DE BRINDES LTDA.",
+        "cnpj": "17.589.437/0001-05",
+        "endereco": "Q 40 RUA 3 LOTE - 11 GUARA II, BRASILIA DF|0;0|470",
+        "dados_bancarios": "BANCO ITAU / AG: 6244 C/C: 22656-6",
+        "nome": "RONALDO MARCICANO BRANCO FILHO",
+        "cpf": "063.924.576-58",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342496",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "fortunelicitacoes@gmail.com",
+                                "senha": "763289"
+                            },
+                            "bll": {
+                                "login": "fortunelicitacoes@gmail.com",
+                                "senha": "724359"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "fortunelicitacoes@gmail.com",
+                                "senha": "fortune@2024"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "880": {
+        "nome_empresa": "JS ENGENHARIA LTDA",
+        "razao_social": "JS ENGENHARIA LTDA",
+        "cnpj": "36.308.919/0001-94",
+        "endereco": "R AMERICANO DO BRASIL SN QUADRA22 LOTE 15 SALA 01|;|660",
+        "dados_bancarios": "SICOBB AGENCIA: 5024 CONTA: 52.582-0",
+        "nome": "JOVIANO GOLÇALVES DE ARAUJO",
+        "cpf": "70255328192",
+        "etapas": {
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342508",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "jsengenharialicitacoes@gmail.com",
+                                "senha": "895803"
+                            },
+                            "bll": {
+                                "login": "sengenharialicitacoes@gmail.com",
+                                "senha": "319176"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "jsengenharialicitacoes@gmail.com",
+                                "senha": "ghpxol"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "732": {
+        "nome_empresa": "Luthima",
+        "razao_social": "LUTHIMA COMERCIO ATACADISTA DE TECIDOS LTDA",
+        "cnpj": "37.176.036/0001-30",
+        "endereco": "QUADRA QS 3 EPTC LOTE, número 15, LOJA 02, bairro / distrito AREAL (AGUAS CLARAS), município BRASILIA - DF, CEP 71.953-000.|;|422",
+        "dados_bancarios": "Banco Itaú (341) Agência: 6557 Conta corrente: 43075-5",
+        "nome": "MATHEUS RODRIGUES DE MOURA",
+        "cpf": "036.414.371-13",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342510",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "luthimartecidos@gmail.com",
+                                "senha": "397333"
+                            },
+                            "bll": {
+                                "login": "luthimartecidos@gmail.com",
+                                "senha": " 827715"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": " luthimartecidos@gmail.com",
+                                "senha": "2hljja"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "852": {
+        "nome_empresa": "NEXX BRASIL",
+        "razao_social": "NEXX BRASIL PUBLICIDADE E PROPAGANDA LTDA",
+        "cnpj": "27.049.619/0001-47",
+        "endereco": "",
+        "dados_bancarios": "BANCO ITAU 341 - AGENCIA 2978 - C/C 37055-5",
+        "nome": "Alex Rodrigues da Costa",
+        "cpf": "352.819.148-12",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342512",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "licitanexx@gmail.com",
+                                "senha": "817025"
+                            },
+                            "bll": {
+                                "login": "licitanexx@gmail.com",
+                                "senha": "985495"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": " licitanexx@gmail.com",
+                                "senha": "skiv9m"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "824": {
+        "nome_empresa": "PETRUSS ESTRUTURAS METALICAS LTDA",
+        "razao_social": "PETRUSS ESTRUTURAS METALICAS LTDA",
+        "cnpj": "22.538.473/0001-80",
+        "endereco": "R PROF ULYSSES LEMOS TORRES 525- VILA NOVA YOURK- SÃO PAULO|0;0|528",
+        "dados_bancarios": "BRADESCO- AGENCIA 2846| CONTA CORRENTE 37.0321-5",
+        "nome": "DAVI DA SILVA COSTA",
+        "cpf": "380.280.918-14",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342518",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "petrusslicta@gmail.com",
+                                "senha": "468834"
+                            },
+                            "bll": {
+                                "login": " petrusslicta@gmail.com",
+                                "senha": "668265"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "petrusslicta@gmail.com",
+                                "senha": "gw0jav"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "870": {
+        "nome_empresa": "R GOUMERT",
+        "razao_social": "R. GOUMERT BUFFET LTDA",
+        "cnpj": "24.052.873/0001-06",
+        "endereco": "Rua das Araucárias, 4155, Apt 1008 Torre D Res. Art Life Aqcua, Sul (Águas Claras) Brasília – DF, CEP: 71. 936-250|;|578",
+        "dados_bancarios": "Agência 1606-3  conta corrente 1010699-5  R gourmet BUffet LTDA  BAnco do Brasil CNPJ  24052873000106 Pix 24052873000106",
+        "nome": "RENATO CUNHA DOS SANTOS",
+        "cpf": "023.268.291-74",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "342536",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "goumertlicita24@gmail.com",
+                                "senha": "572874"
+                            },
+                            "bll": {
+                                "login": " goumertlicita24@gmail.com",
+                                "senha": "296217"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "goumertlicita24@gmail.com",
+                                "senha": " wltzp5"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "922": {
+        "nome_empresa": "PISCICULTURA FOSSA",
+        "razao_social": "COMERCIO DE PESCADOS VITOR MEIRELES LTDA",
+        "cnpj": "09.218.378/0001-30",
+        "endereco": "ROD VMS 075 VITOR MEIRELES SABUGUEIRO SC|;|658",
+        "dados_bancarios": "DADOS BANCÁRIO BANCO: 274 AGÊNCIA: 0001 CONTA: 08188305-0 CHAVE PIX: CNPJ:09.218.378/0001-30",
+        "nome": "Rolf Westphal ",
+        "cpf": " 046.104.029-80",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "353848",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "976": {
+        "nome_empresa": "PPA ATACADISTA LTDA",
+        "razao_social": "PPA ATACADISTA LTDA",
+        "cnpj": "44.509.898/0001-01",
+        "endereco": "Q QNP 01 MODULO 04 BLOCO F BOX 07, 08 E 09|;|656",
+        "dados_bancarios": "BANCO SANTADER- AG. 37398- C/C 13005858-0",
+        "nome": "Windelli Marcos Teixeira",
+        "cpf": "012.575.311-07",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "419084",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "ppaatacadistaltda@gmail.com",
+                                "senha": "101958"
+                            },
+                            "bll": {
+                                "login": "ppaatacadistaltda@gmail.com",
+                                "senha": "557944"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "982": {
+        "nome_empresa": "MUNDIAL TURISMO LTDA",
+        "razao_social": "MUNDIAL TURISMO LTDA",
+        "cnpj": "55.461.307/0001-81",
+        "endereco": "AV SARGENTO HERMINIO 1646 SAO VICENTE CRATEUS|;|650",
+        "dados_bancarios": "Ag.: 0001 C.c.: 789686899-2 Banco: 0260 Nu Pagamentos S.A. - Instituição de Pagamento",
+        "nome": "Francisco de Assis Vale Junior",
+        "cpf": "026.833.523-01 ",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "420188",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "mundialturismo34@gmail.com",
+                                "senha": "583270"
+                            },
+                            "bll": {
+                                "login": "mundialturismo34@gmail.com",
+                                "senha": " 679201"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "mundialturismo34@gmail.com",
+                                "senha": "x0vqib"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "986": {
+        "nome_empresa": "CENTRAL DE AR CONDICIONADO HIGH TECH LTDA",
+        "razao_social": "CENTRAL DE AR CONDICIONADO HIGH TECH LTDA",
+        "cnpj": "40.063.946/0001-11",
+        "endereco": "",
+        "dados_bancarios": ". ",
+        "nome": "Pedro Henrique da Silva felix",
+        "cpf": "0",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "420870",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": "centraldearcondicionadohightec@gmail.com",
+                                "senha": "317084"
+                            },
+                            "bll": {
+                                "login": "centraldearcondicionadohightec@gmail.com",
+                                "senha": "191085"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "798": {
+        "nome_empresa": "CAVAN SOLUCOES EM TECNOLOGIA LTDA",
+        "razao_social": "CAVAN SOLUCOES EM TECNOLOGIA LTDA",
+        "cnpj": "42.962.199/0001-89",
+        "endereco": "Av. Alexios Jaft 1811 blo 10 apto 12  CEP: 05187-010 São Paulo|;|654",
+        "dados_bancarios": "Banco Inter, Ag. 0001 – C/P 014933041/DIG 3",
+        "nome": "Vanessa Do Nasc. Matias",
+        "cpf": "354.256.818-01",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "425020",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": "cavansolucoes@gmail.com",
+                                "senha": "837073"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "908": {
+        "nome_empresa": "VHO PROTESE LTDA",
+        "razao_social": "VHO PROTESE LTDA",
+        "cnpj": "44.543.349/0001-45",
+        "endereco": "",
+        "dados_bancarios": ".",
+        "nome": "Victor Hugo da Fonseca Vasconcelos",
+        "cpf": "121.292.556-47",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "426386",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "890": {
+        "nome_empresa": "INOVAR CONTROL PRODUTOS ELETRICOS LTDA",
+        "razao_social": "INOVAR CONTROL PRODUTOS ELETRICOS LTDA",
+        "cnpj": "49.788.451.0001.24",
+        "endereco": "AV TRANSBRASILIANA QUADRA199 LOTE 06 1042 SET PEDRO LUDOVICO|;|636",
+        "dados_bancarios": ".",
+        "nome": "Renato Ferreira Franco ",
+        "cpf": "02702402178 ",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "431162",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1004": {
+        "nome_empresa": "MINHA KAMISETA, CAMISETAS PERSONALIZADAS LTDA",
+        "razao_social": "MINHA KAMISETA, CAMISETAS PERSONALIZADAS LTDA",
+        "cnpj": "54.892.489/0001-82",
+        "endereco": "ST SHVG CHACARA 56 LOTE NÚMERO 58 BAIRRO/DISTRITO SETOR HABITACIONAL VEREDAGRANDE (TAGUATINGA) BRASILIA|;|668",
+        "dados_bancarios": "BANCO: 007 - INTER AGENCIA: 0001 CONTA: 35784505-6 PIX: CNPJ - 54.892.489/0001-82",
+        "nome": "Elisangelo Bonfim santos",
+        "cpf": "922.956.491.53",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "436038",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": " minhakamizeta@gmail.com",
+                                "senha": "924915"
+                            },
+                            "bll": {
+                                "login": "minhakamizeta@gmail.com",
+                                "senha": "457688"
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": "minhakamizeta@gmail.com",
+                                "senha": "tyvaqx"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1000": {
+        "nome_empresa": "PORTO BELO COMERCIO DE PESCADOS LTDA",
+        "razao_social": "PORTO BELO COMERCIO DE PESCADOS LTDA",
+        "cnpj": "41.832.531/0001-28",
+        "endereco": "",
+        "dados_bancarios": ".",
+        "nome": "Josenir Sandmann",
+        "cpf": "95089594104",
+        "etapas": {
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "436082",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": " belop8083@gmail.com",
+                                "senha": " 0ongaw"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1010": {
+        "nome_empresa": "IRELAND TRAVEL",
+        "razao_social": "KAROLINE PEREIRA VICENTE AGENCIA DE VIAGENS E TURISMO LTDA",
+        "cnpj": "07.407.058/0001-01",
+        "endereco": "R BORTOLO PAVAN 242 SALA 02|;|638",
+        "dados_bancarios": "PREENCHER",
+        "nome": "Karoline Pereira Vicente ",
+        "cpf": "072.554.569-01",
+        "etapas": {
+            "CLIENTE": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "443826",
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": "012.071.231-88",
+                                "senha": "Fer050287@"
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "1042": {
+        "nome_empresa": "VEREDA CRIATIVA LTDA",
+        "razao_social": "",
+        "cnpj": " 58.506.085/0001-64",
+        "endereco": "",
+        "dados_bancarios": "",
+        "nome": "Ranver Yuri Mendonça Costa ",
+        "cpf": "101.028.886-55 ",
+        "etapas": {
+            "PENDÊNCIA": {
+                "total_cards": 1,
+                "cards": [
+                    {
+                        "ID": "463358",
+                        "Número do pregão": null,
+                        "Cidade": null,
+                        "Estado": null,
+                        "Objeto": null,
+                        "Portal": null,
+                        "ID Licitação": null,
+                        "Data": "",
+                        "AO ESTIMADO ÓRGÃO": null,
+                        "Validade da proposta": null,
+                        "Credenciais": {
+                            "bnc": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "bll": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "comprasnet": {
+                                "login": null,
+                                "senha": null
+                            },
+                            "compras_publicas": {
+                                "login": null,
+                                "senha": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

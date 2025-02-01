@@ -1,0 +1,12 @@
+{
+    "portal_id": "comprasnet",
+    "portal_nome": "ComprasNet - Compras Governamentais",
+    "registros": [
+        {
+            "numero_compra": "900032024",
+            "uasg": "982381",
+            "modalidade": "Pregão",
+            "data_cadastro": "2025-01-31 11:39:46"
+        }
+    ]
+}
