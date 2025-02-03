@@ -2,50 +2,23 @@ import requests
 import json
 from datetime import datetime
 import pytz
+import os
 
 class APIBitrix:
     def __init__(self):
         # URL da API do Bitrix24
-        url_api_bitrix24 = "https://smartsupply.bitrix24.com.br/rest/16/canbg9vx6rag1mox/"
+        self.url_api_bitrix24 = "https://smartsupply.bitrix24.com.br/rest/16/canbg9vx6rag1mox/"
+        self.dados_json = None
 
     # Mapeamento de etapas pelo ID e nome para os pipelines "PARTICIPANDO" (ID: 4) e "PIPELINE_0" (ID: 0)
     etapas = {
         # Pipeline 4: PARTICIPANDO
-        
-        "C4:UC_FES7FE": "ACEITAS",
-        "C4:UC_0231Y5": "CADASTRAR NO PORTAL",
-
-        # Pipeline 2: GESTÃO DOCUMENTAL
-        "C2:UC_ARBQO9": "CLIENTE",
-        "C2:UC_TS3N3O": "JUNTAR DOC'S",
-        "C2:NEW": "PENDÊNCIA",
-        "C2:UC_8ASL7Y": "ATENÇÃO",
-        "C2:UC_1PKAEQ": "CERTIDÕES VENCIDAS",
-        "C2:UC_SKP20T": "PRIMEIRA COBRANÇA",
-        "C2:UC_OVHW9C": "SEGUNDA COBRANÇA",
-        "C2:UC_GFPUC0": "TERCEIRA COBRANÇA",
-        "C2:UC_HSOAJY": "GESTÃO CLIENTES - CERTIDÕES VENCIDAS",
-        "C2:UC_V6IMZ5": "GESTÃO CLIENTES - DOCUMENTAÇÃO VENCIDA",
-
+        "C4:UC_FES7FE": "ACEITAS"
     }
 
     pipelines_e_etapas = {
         "4": [  # Pipeline: PARTICIPANDO (ID: 4)
-            "C4:UC_FES7FE",
-            "C4:UC_0231Y5",
-        ],
-
-        "2": [  # Pipeline: GESTÃO DOCUMENTAL (ID: 2)
-            "C2:UC_ARBQO9",
-            "C2:UC_TS3N3O",
-            "C2:NEW",
-            "C2:UC_8ASL7Y",
-            "C2:UC_1PKAEQ",
-            "C2:UC_SKP20T",
-            "C2:UC_OVHW9C",
-            "C2:UC_GFPUC0",
-            "C2:UC_HSOAJY",
-            "C2:UC_V6IMZ5",
+            "C4:UC_FES7FE"
         ]
     }
 
@@ -67,7 +40,7 @@ class APIBitrix:
         "UF_CRM_1697549977",      # idlicitacao
         "UF_CRM_1700081429",      # Data
         "UF_CRM_1657388991",      # AO ESTIMADO ÓRGÃO
-        "UF_CRM_1661536398",      # Validade da proposta
+        "UF_CRM_1661536398"       # Validade da proposta
     ]
 
     # Campos da empresa a serem obtidos
@@ -77,17 +50,15 @@ class APIBitrix:
         "UF_CRM_1684363050",      # ENDEREÇO
         "UF_CRM_1657470593970",   # DADOS BANCÁRIOS
         "UF_CRM_1657474180077",   # Campo adicional
-        "UF_CRM_1657474218468",   # Campo adicional
+        "UF_CRM_1657474218468"    # Campo adicional
     ]
 
     # Método para obter informações dos cartões de negócio em várias etapas de um pipeline específico, com paginação
-    def obter_info_cartoes_na_etapa(id_pipeline, id_etapas):
-        endpoint = "crm.deal.list"
+    def obter_info_cartoes_na_etapa(self, id_pipeline, id_etapas):
+        endpoint = "crm.deal.list"  
         start = 0
         resultados_completos = []
         total_fetched = 0
-
-        print(f"Iniciando a obtenção de cartões para o Pipeline ID: {id_pipeline} com {len(id_etapas)} etapas.")
 
         while True:
             parametros = {
@@ -102,14 +73,14 @@ class APIBitrix:
                     "DATE_CREATE",
                     "DATE_MODIFY",
                     "UF_CRM_1700081429"  # Data e hora da sessão
-                ] + campos_adicionais,
+                ] + self.campos_adicionais,
                 "order": {"DATE_CREATE": "ASC"},
                 "start": start  # Usado para paginar os resultados
             }
 
             print(f"Fazendo requisição para obter cartões com start={start}...")
             try:
-                response = requests.post(url_api_bitrix24 + endpoint, json=parametros)
+                response = requests.post(self.url_api_bitrix24 + endpoint, json=parametros)
                 response.raise_for_status()
                 resultados = response.json().get("result", [])
                 fetched_count = len(resultados)
@@ -136,11 +107,11 @@ class APIBitrix:
         return resultados_completos
 
     # Método para obter informações de uma empresa específica
-    def obter_info_empresa_por_id(id_empresa):
+    def obter_info_empresa_por_id(self, id_empresa):
         endpoint = "crm.company.get"
         print(f"Obtendo informações da empresa com ID: {id_empresa}")
         try:
-            response = requests.get(url_api_bitrix24 + endpoint, params={"ID": id_empresa})
+            response = requests.get(self.url_api_bitrix24 + endpoint, params={"ID": id_empresa})
             response.raise_for_status()
             result = response.json().get("result", {})
             
@@ -209,7 +180,7 @@ class APIBitrix:
             return "Data inválida"
 
     # Função para processar os cartões e agrupar os dados
-    def processar_cartoes(dados_agrupados, cartoes, etapas):
+    def processar_cartoes(self, dados_agrupados, cartoes, etapas):
         total_cartoes = len(cartoes)
         print(f"Iniciando processamento de {total_cartoes} cartões.")
         
@@ -222,66 +193,22 @@ class APIBitrix:
             etapa_nome = etapas.get(etapa_id, "Etapa Desconhecida")
             
             # Define as informações do cartão com base na etapa
-            if etapa_nome == "CLIENTE":
-                info_cartao = {
-                    "ID": id_cartao,
-                    "Credenciais": {
-                        "bnc": {
-                            "login": cartao.get('UF_CRM_1737564045', "Não disponível"),
-                            "senha": cartao.get('UF_CRM_1737564060', "Não disponível")
-                        },
-                        "bll": {
-                            "login": cartao.get('UF_CRM_1737564076', "Não disponível"),
-                            "senha": cartao.get('UF_CRM_1737564324', "Não disponível")
-                        },
-                        "comprasnet": {
-                            "login": cartao.get('UF_CRM_1737564007', "Não disponível"),
-                            "senha": cartao.get('UF_CRM_1737564024', "Não disponível")
-                        },
-                        "compras_publicas": {
-                            "login": cartao.get('UF_CRM_1737564347', "Não disponível"),
-                            "senha": cartao.get('UF_CRM_1737564362', "Não disponível")
-                        }
-                    }
-                }
-            else:
-                info_cartao = {
-                    "ID": id_cartao,
-                    "Número do pregão": cartao.get('UF_CRM_1657389026', "Não disponível"),
-                    "Cidade": cartao.get('UF_CRM_1657401479', "Não disponível"),
-                    "Estado": cartao.get('UF_CRM_1657401492', "Não disponível"),
-                    "Objeto": cartao.get('UF_CRM_1657480523844', "Não disponível"),
-                    "Portal": cartao.get('UF_CRM_1657389005', "Não disponível"),
-                    "ID Licitação": cartao.get('UF_CRM_1697549977', "Não disponível"),
-                    "Data": cartao.get('UF_CRM_1700081429', "Não disponível"),
-                    "AO ESTIMADO ÓRGÃO": cartao.get('UF_CRM_1657388991', "Não disponível"),
-                    "Validade da proposta": cartao.get('UF_CRM_1661536398', "Não disponível")
-                }
-
-            # Adiciona credenciais apenas se não for a etapa "CADASTRAR NO PORTAL" ou "ACEITAS"
-            if etapa_nome not in ["CADASTRAR NO PORTAL", "ACEITAS"] and etapa_nome != "CLIENTE":
-                info_cartao["Credenciais"] = {
-                    "bnc": {
-                        "login": cartao.get('UF_CRM_1737564045', "Não disponível"),
-                        "senha": cartao.get('UF_CRM_1737564060', "Não disponível")
-                    },
-                    "bll": {
-                        "login": cartao.get('UF_CRM_1737564076', "Não disponível"),
-                        "senha": cartao.get('UF_CRM_1737564324', "Não disponível")
-                    },
-                    "comprasnet": {
-                        "login": cartao.get('UF_CRM_1737564007', "Não disponível"),
-                        "senha": cartao.get('UF_CRM_1737564024', "Não disponível")
-                    },
-                    "compras_publicas": {
-                        "login": cartao.get('UF_CRM_1737564347', "Não disponível"),
-                        "senha": cartao.get('UF_CRM_1737564362', "Não disponível")
-                    }
-                }
+            info_cartao = {
+                "ID": id_cartao,
+                "Número do pregão": cartao.get('UF_CRM_1657389026', "Não disponível"),
+                "Cidade": cartao.get('UF_CRM_1657401479', "Não disponível"),
+                "Estado": cartao.get('UF_CRM_1657401492', "Não disponível"),
+                "Objeto": cartao.get('UF_CRM_1657480523844', "Não disponível"),
+                "Portal": cartao.get('UF_CRM_1657389005', "Não disponível"),
+                "ID Licitação": cartao.get('UF_CRM_1697549977', "Não disponível"),
+                "Data": cartao.get('UF_CRM_1700081429', "Não disponível"),
+                "AO ESTIMADO ÓRGÃO": cartao.get('UF_CRM_1657388991', "Não disponível"),
+                "Validade da proposta": cartao.get('UF_CRM_1661536398', "Não disponível")
+            }
 
             if id_empresa:
                 if id_empresa not in dados_agrupados:
-                    info_empresa = obter_info_empresa_por_id(id_empresa)
+                    info_empresa = self.obter_info_empresa_por_id(id_empresa)
                     dados_agrupados[id_empresa] = {
                         **info_empresa,
                         "etapas": {}
@@ -302,20 +229,25 @@ class APIBitrix:
         return dados_agrupados
 
     # Função principal
-    def main():
+    def main(self):
+        diretorio = "data/json"
+        if not os.path.exists(diretorio):
+            os.makedirs(diretorio)
+        
+
         print("Iniciando o script de processamento de cartões do Bitrix24.")
         dados_agrupados = {}
-        total_pipelines = len(pipelines_e_etapas)
+        total_pipelines = len(self.pipelines_e_etapas)
         print(f"Total de pipelines a serem processados: {total_pipelines}")
 
-        for idx_pipeline, (id_pipeline, id_etapas) in enumerate(pipelines_e_etapas.items(), start=1):
+        for idx_pipeline, (id_pipeline, id_etapas) in enumerate(self.pipelines_e_etapas.items(), start=1):
             nome_pipeline = "PARTICIPANDO" if id_pipeline == "4" else ("PIPELINE_0" if id_pipeline == "0" else "Outro Pipeline")
             print(f"\nProcessando Pipeline {idx_pipeline}/{total_pipelines} - ID: {id_pipeline} ({nome_pipeline})")
-            cartoes_na_etapa = obter_info_cartoes_na_etapa(id_pipeline, id_etapas)
+            cartoes_na_etapa = self.obter_info_cartoes_na_etapa(id_pipeline, id_etapas)
 
             if cartoes_na_etapa:
                 print(f"{len(cartoes_na_etapa)} cartões encontrados no Pipeline ID {id_pipeline}.")
-                dados_agrupados = processar_cartoes(dados_agrupados, cartoes_na_etapa, etapas)
+                dados_agrupados = self.processar_cartoes(dados_agrupados, cartoes_na_etapa, self.etapas)
             else:
                 print(f"Nenhum cartão encontrado no Pipeline ID {id_pipeline}.")
 
@@ -328,23 +260,18 @@ class APIBitrix:
                 total_cards = detalhes["total_cards"]
                 print(f"  - Etapa: {etapa}, Total de Cards: {total_cards}")
                 for card in detalhes["cards"]:
-                    if etapa == "CLIENTE":
-                        info_card = f"    - ID do Card: {card['ID']}"
-                        if "Credenciais" in card:
-                            info_card += f", Credenciais: {card['Credenciais']}"
-                    else:
-                        info_card = (f"    - ID do Card: {card['ID']}, "
-                                f"Número do pregão: {card.get('Número do pregão', 'N/A')}, "
-                                f"Cidade: {card.get('Cidade', 'N/A')}, "
-                                f"Estado: {card.get('Estado', 'N/A')}, "
-                                f"Portal: {card.get('Portal', 'N/A')}, "
-                                f"ID Licitação: {card.get('ID Licitação', 'N/A')}, "
-                                f"Objeto: {card.get('Objeto', 'N/A')}")
-                    
-                    print(info_card)
+                    info_card = (f"    - ID do Card: {card['ID']}, "
+                            f"Número do pregão: {card.get('Número do pregão', 'N/A')}, "
+                            f"Cidade: {card.get('Cidade', 'N/A')}, "
+                            f"Estado: {card.get('Estado', 'N/A')}, "
+                            f"Portal: {card.get('Portal', 'N/A')}, "
+                            f"ID Licitação: {card.get('ID Licitação', 'N/A')}, "
+                            f"Objeto: {card.get('Objeto', 'N/A')}")
+                
+                print(info_card)
 
         # Salvar a lista em um arquivo JSON
-        caminho_arquivo = "dados_operacao4.json"
+        caminho_arquivo = os.path.join(diretorio, "dados_operacao.json")
         print(f"\nSalvando os dados agrupados em '{caminho_arquivo}'...")
         try:
             with open(caminho_arquivo, 'w', encoding="utf-8") as arquivo_json:
@@ -353,4 +280,12 @@ class APIBitrix:
         except IOError as e:
             print(f"Erro ao salvar o arquivo JSON: {e}")
 
-        print("Script concluído.")
+        print("Script concluído.")  
+
+    def iniciar_processamento(self):
+        """Inicia o processamento dos dados do Bitrix"""
+        return self.main()
+
+if __name__ == '__main__':
+    api = APIBitrix()
+    api.iniciar_processamento()

@@ -1,161 +1,27 @@
 {
-    "980": {
-        "nome_empresa": "JC SOLUCOES EM ENGENHARIA LTDA",
+    "982": {
+        "nome_empresa": "MUNDIAL TURISMO LTDA",
+        "razao_social": "MUNDIAL TURISMO LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "AV SARGENTO HERMINIO 1646 SAO VICENTE CRATEUS|;|650",
+        "dados_bancarios": "Ag.: 0001 C.c.: 789686899-2 Banco: 0260 Nu Pagamentos S.A. - Instituição de Pagamento",
+        "nome": "Francisco de Assis Vale Junior",
+        "cpf": "026.833.523-01 ",
         "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 3,
+            "ACEITAS": {
+                "total_cards": 1,
                 "cards": [
                     {
-                        "ID": "445374",
-                        "Número do pregão": " 06/2024",
+                        "ID": "456210",
+                        "Número do pregão": "900542025",
                         "Cidade": null,
-                        "Estado": "RS",
-                        "Objeto": "O presente credenciamento tem por objeto o CREDENCIAMENTO de Pessoas Jurídicas prestadores de serviços nas ÁREAS DE ENGENHARIA AMBIENTAL, ENGENHARIA CIVIL, ENGENHARIA ELÉTRICA, ENGENHARIA DE SEGURANÇA DO TRABALHO E ARQUITETURA para prestação de serviços técnico-profissionais em caráter temporário e de abrangência pertinentes à classe.",
-                        "Portal": "PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    },
-                    {
-                        "ID": "461916",
-                        "Número do pregão": "900012025",
-                        "Cidade": null,
-                        "Estado": "GO",
-                        "Objeto": "Concorrência para Contratação de Empresa Especializada em Obra Civil no regime de Empreitada Global para a Execução de Troca de Telhado e Forro da EMEF Professor Joaquim de Paiva, localizada na Rua do Cedro esquina com a Rua da Esperança, Vila SERPRO - Rio Verde  GO, conforme especificações dos projetos, memorial descritivo, cronograma físico-financeiro, termo de referência e demais anexos ao processo.",
+                        "Estado": "ES",
+                        "Objeto": "Contratação de serviço de agenciamento de <em>passagens</em> nacionais e internacionais, conforme condições, quantidades e exigências estabelecidas no Edital e seus anexos.",
                         "Portal": "ComprasNet",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    },
-                    {
-                        "ID": "462280",
-                        "Número do pregão": "90000/2025 ",
-                        "Cidade": null,
-                        "Estado": "RJ",
-                        "Objeto": "Contratação de empresa especializada para elaboração de projetos de prevenção e combate a incêndio e pânico, e sistema de proteção contra descarga atmosférica – SPDA para as edificações e instalações do campus do Instituto Nacional de Educação de Surdos (INES).",
-                        "Portal": "COMPRAS GOV",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null   
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "420192",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "jcsolucoesemengenharia@gmail.com",
-                                "senha": "989448"
-                            },
-                            "bll": {
-                                "login": "jcsolucoesemengenharia@gmail.com",
-                                "senha": "499388"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "996": {
-        "nome_empresa": "NOROESTE FERRAGENS LTDA",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "451564",
-                        "Número do pregão": "013/2024",
-                        "Cidade": null,
-                        "Estado": "GO",
-                        "Objeto": "REGISTRO DE PREÇOS para aquisição de ferramentas para manutenção dos empreendimentos geridos pela Celgpar, conforme especificações contidas no Edital, no Termo de Referência e demais anexos.",
-                        "Portal": "Licitações-e",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "436080",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "noroesteferragens3@gmail.com",
-                                "senha": "366229"
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "ID Licitação": "5919516",
+                        "Data": "2025-02-04T10:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "UNIVERSIDADE FEDERAL DO ESPIRITO SANTO/ES",
+                        "Validade da proposta": null
                     }
                 ]
             }
@@ -163,34 +29,13 @@
     },
     "954": {
         "nome_empresa": "AREA 4 EVENTOS LTDA",
+        "razao_social": "AREA 4 EVENTOS LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "",
+        "dados_bancarios": "CORA SCD - 403 AGENCIA: 0001 CONTA: 2644687-4",
+        "nome": "Cláudia Lima Alves ",
+        "cpf": " 614.640.745-34",
         "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "451840",
-                        "Número do pregão": "01/2025",
-                        "Cidade": null,
-                        "Estado": "DF",
-                        "Objeto": "psicólogo (capacitação) psicólogo (atendimento e acompanhamento) <em>palestrante</em> / mediador assistente social (atendimento e acompanhamento) coordenação executiva de projeto coordenação de equipe psicossocial",
-                        "Portal": "SICONV",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
             "ACEITAS": {
                 "total_cards": 2,
                 "cards": [
@@ -201,20 +46,10 @@
                         "Estado": "GO",
                         "Objeto": "Contratação de empresa especializada na prestação de serviços de segurança, brigadista e recepcionista, conforme demanda, para eventos deste Tribunal de Contas dos Municípios do Estado de Goiás.",
                         "Portal": "ComprasNet",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "ID Licitação": "5938811",
+                        "Data": "2025-02-12T14:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "TRIBUNAL DE CONTAS DOS MUNIC.DO EST.DE GOIÁS",
+                        "Validade da proposta": null
                     },
                     {
                         "ID": "464554",
@@ -223,364 +58,10 @@
                         "Estado": "PB",
                         "Objeto": "Contratação de serviços especializados na prestação de serviços para atender eventos institucionais organizados pela UFPB, conforme condições, quantidades e exigências estabelecidas neste instrumento, nos termos da tabela abaixo, conforme condições e exigências estabelecidas no termo de referência.",
                         "Portal": "ComprasNet",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "632": {
-        "nome_empresa": "HILAN",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "453698",
-                        "Número do pregão": "007/2025",
-                        "Cidade": null,
-                        "Estado": "DF",
-                        "Objeto": "Contratação de serviços de link de <em>Internet</em> Dedicado com IP fixo de no mínimo 10 Mbps (não compartilhada), ou outra tecnologia similar ou superior, para permitir acesso das Conveniências do BRB instaladas em todo território nacional, à infraestrutura do BRB em Data Center, incluindo fornecimento de equipamentos em comodato, instalação, configuração e manutenção do serviço instalado, conforme condições e especificações constantes deste edital e seus anexos.",
-                        "Portal": "Compras Públicas",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "1026": {
-        "nome_empresa": "FIELTUR AGENCIA DE VIAGEM LTDA",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 2,
-                "cards": [
-                    {
-                        "ID": "457148",
-                        "Número do pregão": "900372025",
-                        "Cidade": null,
-                        "Estado": "AC",
-                        "Objeto": "Contratação de empresa para prestação de serviço de emissão de PASSAGENS <em>AÉREAS</em> NACIONAIS, INTERNACIONAIS e INTERMUNICIPAIS, sob demanda, de agenciamento de viagens, compreendendo, serviços de pesquisas de preços, reservas, marcação, cancelamento, remarcação, emissão e entrega de <em>bilhetes</em> eletrônicos de passagens <em>aéreas</em> (e-ticket) ou de ordens de passagens, com o respectivo código localizador e seguro de viagem para passagens <em>aéreas</em> internacionais, em atendimento às nece",
-                        "Portal": "ComprasNet",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    },
-                    {
-                        "ID": "458388",
-                        "Número do pregão": "2/2025",
-                        "Cidade": null,
-                        "Estado": "MG",
-                        "Objeto": "<em>HOSPEDAGEM</em>",
-                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "ACEITAS": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "463858",
-                        "Número do pregão": "13 | Processo 99013/2025",
-                        "Cidade": null,
-                        "Estado": "PE",
-                        "Objeto": "A CONTRATACAO DE EMPRESA PARA PRESTACAo DE SERVIcOS DE NATUREZA CONTINUADA POR INTERMEDIO DE AGENCIA DE VIAGENS PARA COTACAO RESERVA REMARCACAAO CANCELAMENTO E FORNECIMENTO DE <em>PASSAGENS</em> AEREAS NACIONAIS E INTERNACIONAIS IDA E VOLTA para atender as demandas da Secretaria De Desenvolvimento Social e Direitos Humanos de Olinda conforme especificacoes e quantidades discriminadas neste Termo de Referencia para o periodo de 12 doze meses.",
-                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "453094",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "992": {
-        "nome_empresa": "WIND",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "458788",
-                        "Número do pregão": "007-2025PE",
-                        "Cidade": null,
-                        "Estado": "BA",
-                        "Objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA PRESTAÇÃO DE SERVIÇOS GRÁFICOS COM FORNECIMENTO DE MATERIAL, A FIM DE ATENDER AS NECESSIDADES DAS SECRETARIAS E REPARTIÇÕES PÚBLICAS PERTENCENTES AO MUNICÍPIO DE ITATIM-BA, CONFORME CONDIÇÕES, QUANTIDADES E EXIGÊNCIAS ESTABELECIDAS NESTE EDITAL E SEUS ANEXOS.",
-                        "Portal": "BLL - Bolsa de Licitações e Leilões",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "ACEITAS": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "463386",
-                        "Número do pregão": "02/2025",
-                        "Cidade": null,
-                        "Estado": "AL",
-                        "Objeto": "Registro de Preço para Futura e Eventual Contratação de Serviços Gráficos, com fornecimento de Material de Impressão e Confecção, para atender às necessidades das Secretarias Municipais do Poder Executivo do Município de Satuba/AL.",
-                        "Portal": "BNC - Bolsa Nacional de Compras",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "429086",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "wind.alcantaramendes@gmail.com",
-                                "senha": "710615"
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "902": {
-        "nome_empresa": "VERUM VIRIDI BRASIL COMERCIO E SERVICO LTDA",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "461152",
-                        "Número do pregão": "6/2025",
-                        "Cidade": null,
-                        "Estado": "MG",
-                        "Objeto": "AQUISIÇÃO DE <em>CANABIDIOL</em> PARA ATENDIMENTO DA ÁREA DA SAÚDE PERTENCENTE A PREFEITURA MUNICIPAL DE QUARTEL GERAL/MG.",
-                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "349684",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "viridiverum@gmail.com",
-                                "senha": "175569"
-                            },
-                            "bll": {
-                                "login": "viridiverum@gmail.com",
-                                "senha": "700595"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "1022": {
-        "nome_empresa": "LIFE BUSINESS",
-        "etapas": {
-            "CADASTRAR NO PORTAL": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "462996",
-                        "Número do pregão": "902692025",
-                        "Cidade": null,
-                        "Estado": "MG",
-                        "Objeto": "Conforme aprovado em acordo coletivo entre os funcionários e a Diretoria do CRBio-04 (CLÁUSULA TERCEIRA), o benefício do <em>plano</em> <em>odontológico</em> para os funcionários tem o objetivo de proporcionar qualidade na saúde dos beneficiados e em consequência melhor qualidade de vida, acarretando maior eficiência nas atividades desenvolvidas rotineiramente no CRBio-04. Devendo possuir as coberturas previstas na legislação e no Rol de Procedimentos da Agência nacional de Saúde Suplemen",
-                        "Portal": "ComprasNet",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "449060",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "ID Licitação": "5916170",
+                        "Data": "2025-02-04T09:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "UNIVERSIDADE FEDERAL DA PARAÍBA - CAMPOS ",
+                        "Validade da proposta": null
                     }
                 ]
             }
@@ -588,6 +69,12 @@
     },
     "868": {
         "nome_empresa": "S2X",
+        "razao_social": "S2X PROMOÇÕES LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "R ANTONIO AMBUBA  LOGRADOURO R ANTONIO AMBUBA NÚMERO 712 COMPLEMENTO APT 603 - PARQUE MUNHOZ / SAO PAULO|;|590",
+        "dados_bancarios": "Banco Itaú - Ag. 2978 - C/C 37370-8",
+        "nome": "Alex Guimarães Ribeiro",
+        "cpf": "277.119.098-29",
         "etapas": {
             "ACEITAS": {
                 "total_cards": 1,
@@ -599,47 +86,10 @@
                         "Estado": "MG",
                         "Objeto": "Registro de preços para futura e eventual Contratação de Empresa (s) especializada (s) na prestação de serviços de locução de eventos, gravação de propagandas, sonorização de propaganda volante carro e moto, locação e instalação de sonorização e iluminação de pequeno e médio porte. Conforme anexo I.",
                         "Portal": "Portal Nacional de Contratações Públicas - PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "352024",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "ID Licitação": "5915043",
+                        "Data": "2025-02-07T08:30:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE COUTO DE MAGALHAES DE MINAS",
+                        "Validade da proposta": null
                     }
                 ]
             }
@@ -647,6 +97,12 @@
     },
     "88": {
         "nome_empresa": "ALCÂNTARA MENDES",
+        "razao_social": "ALCÂNTARA MENDES",
+        "cnpj": "Não disponível",
+        "endereco": "SCN 01 BLOCO D, SALA 221 ED. VEGA LUXURY, BRASÍLIA,DF|0;0",
+        "dados_bancarios": "BANCO C6- SA , AG. 0001, CONTA 18394490-9",
+        "nome": "Fernanda Alcântara",
+        "cpf": "012.071.231-88",
         "etapas": {
             "ACEITAS": {
                 "total_cards": 4,
@@ -658,20 +114,10 @@
                         "Estado": null,
                         "Objeto": "Prestação dos Serviços de Assessoria e Consultoria em Contabilidade Pública, Setor Pessoal, Licitações e Contratos e Governança Pública para Atender as Necessidades da Câmara Municipal de Catunda-CE",
                         "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "ID Licitação": "5936649",
+                        "Data": "2025-02-12T08:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE CATUNDA - CAMARA MUNICIPAL",
+                        "Validade da proposta": null
                     },
                     {
                         "ID": "463324",
@@ -680,20 +126,10 @@
                         "Estado": null,
                         "Objeto": "Prestação de Serviços Técnicos Especializados de Consultoria e Assessoria Administrativa em Compras Públicas, Licitações e Contratos, de forma a atender as normas legais na Prefeitura Municipal de Terra Nova e suas secretarias.",
                         "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "ID Licitação": "5944338",
+                        "Data": "2025-02-11T14:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE TERRA NOVA",
+                        "Validade da proposta": null
                     },
                     {
                         "ID": "463326",
@@ -702,20 +138,10 @@
                         "Estado": null,
                         "Objeto": "CONTRATAÇÃO DE EMPRESA COM CONHECIMENTO TÉCNICO ESPECIALIZADO PARA PRESTAÇÃO DE SERVIÇOS DE ASSESSORIA E CONSULTORIA EM LICITAÇÕES E CONTRATOS COMPREENDENDO ORIENTAÇÕES NAS FASES INTERNAS E EXTERNAS, ELABORAÇÃO DE MINUTAS, EDITAIS, TERMO DE REFERÊNCIA ENTRE OUTROS, ACOMPANHAMENTO AOS PREGÕES, CONCORRÊNCIA, DISPENSAS, INEXIGIBILIDADE REALIZADOS PELA CÂMARA MUNICIPAL DE VEREADORES DE SANTA TEREZINHA/PE, COMO TAMBÉM A INCLUSÃO DAS INFORMAÇÕES JUNTO AO REMESSA-TCEPE.",
                         "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "ID Licitação": "5945296",
+                        "Data": "2025-02-03T18:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "CÂMARA MUNICIPAL DE SANTA TEREZINHA",
+                        "Validade da proposta": null
                     },
                     {
                         "ID": "463330",
@@ -724,47 +150,38 @@
                         "Estado": null,
                         "Objeto": "Contratação de empresa para prestação de serviços de consultoria e assessoria, gerenciamento e alimentação dos dados contábeis, licitações e contratos, patrimônios, setor pessoal e obras no Sistema Integrado de Gestão e Auditoria-Siga, bem como a orientação e capacitação dos servidores envolvidos no mesmo da Prefeitura Municipal de Heliópolis (BA), conforme condições, quantidades e exigências estabelecidas neste Edital e no Termo de Referência.",
                         "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "ID Licitação": "5926405",
+                        "Data": "2025-02-05T12:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICÍPIO DE HELIÓPOLIS/BA",
+                        "Validade da proposta": null
                     }
                 ]
-            },
-            "CLIENTE": {
+            }
+        }
+    },
+    "992": {
+        "nome_empresa": "WIND",
+        "razao_social": "W DOS S GOUVEIA LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "R SANTA LUZIA 449 LOJA 1 TABULEIRO DO MARTINS MACEIO|;|662",
+        "dados_bancarios": "PREENCHER",
+        "nome": "WINDSON DOS SANTOS GOUVEIA",
+        "cpf": "157.121.784.35",
+        "etapas": {
+            "ACEITAS": {
                 "total_cards": 1,
                 "cards": [
                     {
-                        "ID": "342484",
-                        "Número do pregão": null,
+                        "ID": "463386",
+                        "Número do pregão": "02/2025",
                         "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "cadastrosmartsupply@gmail.com",
-                                "senha": "202307"
-                            },
-                            "bll": {
-                                "login": "daniel@smartsupply.net.br",
-                                "senha": "359753"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "Estado": "AL",
+                        "Objeto": "Registro de Preço para Futura e Eventual Contratação de Serviços Gráficos, com fornecimento de Material de Impressão e Confecção, para atender às necessidades das Secretarias Municipais do Poder Executivo do Município de Satuba/AL.",
+                        "Portal": "BNC - Bolsa Nacional de Compras",
+                        "ID Licitação": "5937646",
+                        "Data": "2025-02-04T08:30:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE SATUBA [SATUBA-AL]",
+                        "Validade da proposta": null
                     }
                 ]
             }
@@ -772,6 +189,12 @@
     },
     "798": {
         "nome_empresa": "CAVAN SOLUCOES EM TECNOLOGIA LTDA",
+        "razao_social": "CAVAN SOLUCOES EM TECNOLOGIA LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "Av. Alexios Jaft 1811 blo 10 apto 12  CEP: 05187-010 São Paulo|;|654",
+        "dados_bancarios": "Banco Inter, Ag. 0001 – C/P 014933041/DIG 3",
+        "nome": "Vanessa Do Nasc. Matias",
+        "cpf": "354.256.818-01",
         "etapas": {
             "ACEITAS": {
                 "total_cards": 1,
@@ -783,495 +206,38 @@
                         "Estado": "RJ",
                         "Objeto": "CONTRATAÇÃO DE EMPRESA PARA FORNECIMENTO DE LICENÇAS DO SISTEMA OPERACIONAL WINDOWS 11 PRO, LICENÇAS DO PACOTE <em>MICROSOFT</em> OFFICE PROFISSIONAL 2021, LICENÇA PERPÉTUA DO <em>MICROSOFT</em> WINDOWS SERVER 2022, E LICENÇA DO SOFTWARE ANTIVÍRUS.",
                         "Portal": "Portal Nacional de Contratações Públicas - PNCP",
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            },
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "425020",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": "cavansolucoes@gmail.com",
-                                "senha": "837073"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "ID Licitação": "5948242",
+                        "Data": "2025-02-12T12:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES MUNICIPAIS DE SEROPEDICA - SEROPREVI",
+                        "Validade da proposta": null
                     }
                 ]
             }
         }
     },
-    "44": {
-        "nome_empresa": "ALTRI CONSTRUTORA LTDA",
+    "1026": {
+        "nome_empresa": "FIELTUR AGENCIA DE VIAGEM LTDA",
+        "razao_social": "FIELTUR AGENCIA DE VIAGEM LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "AV FERNANDO SIMOES BARBOSA 266 SALA 1004 EDF WECON CENTER VI RECIFE|;|664",
+        "dados_bancarios": "CAIXA FEDERAL 3515 1292 000577966684-5",
+        "nome": "Severino Francisco dos Santos",
+        "cpf": "649.935.234-91",
         "etapas": {
-            "CLIENTE": {
+            "ACEITAS": {
                 "total_cards": 1,
                 "cards": [
                     {
-                        "ID": "342490",
-                        "Número do pregão": null,
+                        "ID": "463858",
+                        "Número do pregão": "13 | Processo 99013/2025",
                         "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": " bmc.licitacoes@gmail.com",
-                                "senha": "250572"
-                            },
-                            "bll": {
-                                "login": " bmc.licitacoes@gmail.com",
-                                "senha": "490975"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "678": {
-        "nome_empresa": "AMELATI",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342492",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "licitaameltai@gmail.com",
-                                "senha": "298326"
-                            },
-                            "bll": {
-                                "login": " amelatisolucoes@gmail.com",
-                                "senha": "200778"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "750": {
-        "nome_empresa": "FORTUNE COMERCIO E SERVICOS DE BRINDES LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342496",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "fortunelicitacoes@gmail.com",
-                                "senha": "763289"
-                            },
-                            "bll": {
-                                "login": "fortunelicitacoes@gmail.com",
-                                "senha": "724359"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "880": {
-        "nome_empresa": "JS ENGENHARIA LTDA",
-        "etapas": {
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342508",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "jsengenharialicitacoes@gmail.com",
-                                "senha": "895803"
-                            },
-                            "bll": {
-                                "login": "sengenharialicitacoes@gmail.com",
-                                "senha": "319176"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "732": {
-        "nome_empresa": "Luthima",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342510",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "luthimartecidos@gmail.com",
-                                "senha": "397333"
-                            },
-                            "bll": {
-                                "login": "luthimartecidos@gmail.com",
-                                "senha": " 827715"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "852": {
-        "nome_empresa": "NEXX BRASIL",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342512",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "licitanexx@gmail.com",
-                                "senha": "817025"
-                            },
-                            "bll": {
-                                "login": "licitanexx@gmail.com",
-                                "senha": "985495"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "824": {
-        "nome_empresa": "PETRUSS ESTRUTURAS METALICAS LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342518",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "petrusslicta@gmail.com",
-                                "senha": "468834"
-                            },
-                            "bll": {
-                                "login": " petrusslicta@gmail.com",
-                                "senha": "668265"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "870": {
-        "nome_empresa": "R GOUMERT",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "342536",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "goumertlicita24@gmail.com",
-                                "senha": "572874"
-                            },
-                            "bll": {
-                                "login": " goumertlicita24@gmail.com",
-                                "senha": "296217"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "922": {
-        "nome_empresa": "PISCICULTURA FOSSA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "353848",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "976": {
-        "nome_empresa": "PPA ATACADISTA LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "419084",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "ppaatacadistaltda@gmail.com",
-                                "senha": "101958"
-                            },
-                            "bll": {
-                                "login": "ppaatacadistaltda@gmail.com",
-                                "senha": "557944"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "982": {
-        "nome_empresa": "MUNDIAL TURISMO LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "420188",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "mundialturismo34@gmail.com",
-                                "senha": "583270"
-                            },
-                            "bll": {
-                                "login": "mundialturismo34@gmail.com",
-                                "senha": " 679201"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "986": {
-        "nome_empresa": "CENTRAL DE AR CONDICIONADO HIGH TECH LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "420870",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": "centraldearcondicionadohightec@gmail.com",
-                                "senha": "317084"
-                            },
-                            "bll": {
-                                "login": "centraldearcondicionadohightec@gmail.com",
-                                "senha": "191085"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "908": {
-        "nome_empresa": "VHO PROTESE LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "426386",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "890": {
-        "nome_empresa": "INOVAR CONTROL PRODUTOS ELETRICOS LTDA",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "431162",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
+                        "Estado": "PE",
+                        "Objeto": "A CONTRATACAO DE EMPRESA PARA PRESTACAo DE SERVIcOS DE NATUREZA CONTINUADA POR INTERMEDIO DE AGENCIA DE VIAGENS PARA COTACAO RESERVA REMARCACAAO CANCELAMENTO E FORNECIMENTO DE <em>PASSAGENS</em> AEREAS NACIONAIS E INTERNACIONAIS IDA E VOLTA para atender as demandas da Secretaria De Desenvolvimento Social e Direitos Humanos de Olinda conforme especificacoes e quantidades discriminadas neste Termo de Referencia para o periodo de 12 doze meses.",
+                        "Portal": "Portal Nacional de Contratações Públicas - PNCP",
+                        "ID Licitação": "5948245",
+                        "Data": "2025-02-04T23:59:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "MUNICIPIO DE OLINDA",
+                        "Validade da proposta": null
                     }
                 ]
             }
@@ -1279,127 +245,27 @@
     },
     "1004": {
         "nome_empresa": "MINHA KAMISETA, CAMISETAS PERSONALIZADAS LTDA",
+        "razao_social": "MINHA KAMISETA, CAMISETAS PERSONALIZADAS LTDA",
+        "cnpj": "Não disponível",
+        "endereco": "ST SHVG CHACARA 56 LOTE NÚMERO 58 BAIRRO/DISTRITO SETOR HABITACIONAL VEREDAGRANDE (TAGUATINGA) BRASILIA|;|668",
+        "dados_bancarios": "BANCO: 007 - INTER AGENCIA: 0001 CONTA: 35784505-6 PIX: CNPJ - 54.892.489/0001-82",
+        "nome": "Elisangelo Bonfim santos",
+        "cpf": "922.956.491.53",
         "etapas": {
-            "CLIENTE": {
+            "ACEITAS": {
                 "total_cards": 1,
                 "cards": [
                     {
-                        "ID": "436038",
-                        "Número do pregão": null,
+                        "ID": "464194",
+                        "Número do pregão": "900052025",
                         "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": " minhakamizeta@gmail.com",
-                                "senha": "924915"
-                            },
-                            "bll": {
-                                "login": "minhakamizeta@gmail.com",
-                                "senha": "457688"
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "1000": {
-        "nome_empresa": "PORTO BELO COMERCIO DE PESCADOS LTDA",
-        "etapas": {
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "436082",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "1010": {
-        "nome_empresa": "IRELAND TRAVEL",
-        "etapas": {
-            "CLIENTE": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "443826",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": "012.071.231-88",
-                                "senha": "Fer050287@"
-                            }
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "1042": {
-        "nome_empresa": "VEREDA CRIATIVA LTDA",
-        "etapas": {
-            "PENDÊNCIA": {
-                "total_cards": 1,
-                "cards": [
-                    {
-                        "ID": "463358",
-                        "Número do pregão": null,
-                        "Cidade": null,
-                        "Estado": null,
-                        "Objeto": null,
-                        "Portal": null,
-                        "Credenciais": {
-                            "bnc": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "bll": {
-                                "login": null,
-                                "senha": null
-                            },
-                            "comprasnet": {
-                                "login": null,
-                                "senha": null
-                            }
-                        }
+                        "Estado": "DF",
+                        "Objeto": "Registro de preços para aquisição de coletes ajustáveis e camisetas em <em>tecido</em> para identificação dos colaboradores que atuarão na coordenação e execução do POPRUAJUD, organizado pela Seção Judiciária do Distrito Federal - SJDF.",
+                        "Portal": "ComprasNet",
+                        "ID Licitação": "5946586",
+                        "Data": "2025-02-11T14:00:00+03:00",
+                        "AO ESTIMADO ÓRGÃO": "JUSTICA FEDERAL DE PRIMEIRO GRAU - DF",
+                        "Validade da proposta": null
                     }
                 ]
             }
